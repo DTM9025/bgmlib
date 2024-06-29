@@ -21,43 +21,43 @@ patchclass = "slow"
 
 [update]
 wikipage = "Ten_Desires/Music"
-wikirev = 210442
+wikirev = 372090
 
 [01]
 name_jp = "欲深き霊魂"
 position = "0x00000010, 0x003ACD80, 0x00A4FE00"
 frequency = 44100
 name_en = "Spirit of Avarice"
-comment_jp = "タイトル画面のテーマです。\n\n　いつものメロディです。今回はダーク色多めでお送りします。\n　ＳＴＧはポップな世界観よりダークな方が好まれる傾向にある気がします。\n　このゲームは全く持ってダークじゃないんですけどね。"
-comment_en = "The theme for the title screen.\n\nThe same melody as always. This time, I bring it with darker colors.\n\nI tend to feel that STGs are liked more when they have a dark world view, rather than a pop one.\n\nAlthough this game isn’t dark at all."
+comment_jp = "タイトル画面のテーマです。\n\n　いつものメロディです。今回はダーク色多めでお送りします。\n　ＳＴＧはポップな世界観よりダークな方が好まれる傾向にある\n　気がします。\n　このゲームは全く持ってダークじゃないんですけどね。"
+comment_en = "The theme for the title screen.\n\nThe same melody as always. This time, I bring it with darker colors.\n\nI tend to feel that STGs are liked more when they have a dark world view, rather than a pop one.\n\nThis game isn’t dark at all, though."
 
 [02]
 name_jp = "死霊の夜桜"
 position = "0x00A4FE10, 0x002E72A8, 0x01248B70"
 frequency = 44100
 name_en = "Night Sakura of Dead Spirits"
-comment_jp = "１面のテーマです。\n\n　久々の冥界入りですね。今回のテーマは妖々夢と星蓮船の世界、　両方に関わってくるのでやはり冥界を外せませんでした。\n　メロディアスな曲ですが、一面の曲と言う事を忘れないようにリズミカルに刻んでみました。"
+comment_jp = "１面のテーマです。\n\n　久々の冥界入りですね。今回のテーマは妖々夢と星蓮船の世界、\n　両方に関わってくるのでやはり冥界を外せませんでした。\n　メロディアスな曲ですが、一面の曲と言う事を忘れないように\n　リズミカルに刻んでみました。"
 comment_en = "The first stage theme.\n\nIt’s been a while since we last went to the nether world.\n Since this time, the theme concerns both the PCB world and the UFO world, the nether world had to be there.\n\nIt sounds melodious, but I made it rhythmical so that I won’t forget that it’s a first stage song."
 
 [03]
 name_jp = "死霊の夜桜 (霊界バージョン)"
 position = "0x01C98980, 0x00173954, 0x009245B8"
 frequency = 22050
-name_en = "Night Sakura of Dead Spirits (Spirit world version)"
+name_en = "Night Sakura of Dead Spirits (Spirit World Version)"
 
 [04]
 name_jp = "ゴーストリード"
 position = "0x025BCF38, 0x000AED00, 0x00E38900"
 frequency = 44100
 name_en = "Ghost Lead"
-comment_jp = "西行寺 幽々子のテーマです。\n\n　とにかく立ち位置の難しい曲でした。\n　ゲーム的に一面ボスらしさを出さないといけないので、前の曲のアレンジとかそういう方向は止めました。\n　今回は主人公達にヒントを与える、ただの町人Ａになっています。"
-comment_en = "Yuyuko Saigyouji's theme.\n\nNot really an easy piece to classify.\nSince I had to bring out the fact that she's only a first stage boss, I stopped myself from arranging a previous song of hers.In this game she just acts as a bystander who helps the protagonists on their way."
+comment_jp = "西行寺 幽々子のテーマです。\n\n　とにかく立ち位置の難しい曲でした。\n　ゲーム的に一面ボスらしさを出さないといけないので、前の曲の\n　アレンジとかそういう方向は止めました。\n　今回は主人公達にヒントを与える、ただの町人Ａになっています。"
+comment_en = "Yuyuko Saigyouji's theme.\n\nNot really an easy piece to classify.\nSince I had to bring out the fact that she's only a first stage boss, I stopped myself from arranging a previous song of hers.\nIn this game she just acts as a \"nameless npc villager\" who helps the protagonists on their way."
 
 [05]
 name_jp = "ゴーストリード (霊界バージョン)"
 position = "0x033F5838, 0x00057680, 0x0071C480"
 frequency = 22050
-name_en = "Ghost Lead (Spirit world version)"
+name_en = "Ghost Lead (Spirit World Version)"
 
 [06]
 name_jp = "妖怪寺へようこそ"
@@ -65,19 +65,19 @@ position = "0x03B11CB8, 0x00061580, 0x011FE640"
 frequency = 44100
 name_en = "Welcome to Youkai Temple"
 comment_jp = "２面のテーマです。\n\n　朝のお寺って静かで良いんですけどね。\n　でも妖怪の住まうお寺は、夜から明け方の方が騒がしいのです。\n　お寺に妖怪なんて色々イメージが湧きますよね。\n　そのイメージを生かして、自分なりの和風曲に仕上げました。"
-comment_en = "The second stage theme.\n\nNormally a temple is nice and quiet in the morning.\n\nBut in a temple that a Youkai lives in, it’s noisier from night to daybreak.\n\nI could come up with lots of images for Youkai that live in the temple.\n\nUsing that image, I made it my own sort of Japanese song."
+comment_en = "The second stage theme.\n\nNormally a temple is nice and quiet in the morning.\nBut in a temple that Youkai live in, it’s noisier from night to daybreak.\nYoukai that live in the temple... Doesn't that bring up all sorts of images?\nUsing that image, I made it my own sort of Japanese song."
 
 [07]
 name_jp = "妖怪寺へようこそ (霊界バージョン)"
 position = "0x04D102F8, 0x00030AC0, 0x008FF320"
 frequency = 22050
-name_en = "Welcome to Youkai Temple (Spirit world version)"
+name_en = "Welcome to Youkai Temple (Spirit World Version)"
 
 [08]
 name_jp = "門前の妖怪小娘"
 position = "0x0560F618, 0x00053D00, 0x00C202C0"
 frequency = 44100
-comment_en = "Kyouko Kasodani's theme.\n\nDo people still shout “Yahoo” when they go to the mountains?\n\nOr do you feel nervous all of a sudden and can’t find the courage to shout?\n\nWell of course the Yamabiko get bored, it's understandable for them to go in to Buddhism from the boredom.\n\nBy the way, if you shout \"Idiot\" when you go to the sea, the fishermen would be surprised."
+comment_en = "Kyouko Kasodani's theme.\n\nDo people still shout “Yahoo” when they go to the mountains?\nOr do you feel embarrassed all of a sudden and can’t find the courage to shout?\nWell of course the Yamabiko get bored, it's understandable for them to go in to Buddhism from the boredom.\nBy the way, if you try to relieve stress by shouting \"Idiot!\" out toward the open sea, you'll startle the fishermen."
 name_en = "Youkai Girl at the Gate"
 comment_jp = "幽谷 響子のテーマです。\n\n　今の人でも山に行ってヤッホーって言いますかね？\n　意外と恥ずかしくて大声出せなかったりしませんか？\n　山彦も暇でしょうねぇ。そりゃ仏門にも入りますよ。\n　ちなみに海に行ってバカヤローとか叫ぶと漁師さんが驚きます。"
 
@@ -85,157 +85,157 @@ comment_jp = "幽谷 響子のテーマです。\n\n　今の人でも山に行�
 name_jp = "門前の妖怪小娘 (霊界バージョン)"
 position = "0x0622F8D8, 0x00029E80, 0x00610160"
 frequency = 22050
-name_en = "Youkai Girl at the Gate (Spirit world version)"
+name_en = "Youkai Girl at the Gate (Spirit World Version)"
 
 [10]
 name_jp = "素敵な墓場で暮しましょ"
 position = "0x0683FA38, 0x00297B20, 0x01771E00"
 frequency = 44100
 name_en = "Let’s Live in a Lovely Cemetery"
-comment_jp = "３面のテーマです。\n\n　ゲームに出てくる墓場って言うと、ホラーじゃない限りコミカルな物を想像してしまいます。あんまり重くなり過ぎてもアレですしね。\n　ですので出来るだけコミカルな感じに仕上げました。\n　懐かしい感じがたまりません（個人的にも）"
-comment_en = "The third stage theme.\n\nCemeteries that appear in games- unless it’s a horror game- tends to make you imagine of a comical one. So there’s no meaning in making the music too dark and heavy too.\n\nSo I brushed it up with a comical feel.\n\nI can’t resist this nostalgic feeling (Personally too)"
+comment_jp = "３面のテーマです。\n\n　ゲームに出てくる墓場って言うと、ホラーじゃない限りコミカルな\n　物を想像してしまいます。あんまり重くなり過ぎてもアレですしね。\n　ですので出来るだけコミカルな感じに仕上げました。\n　懐かしい感じがたまりません（個人的にも）"
+comment_en = "The third stage theme.\n\nCemeteries that appear in games- unless it’s a horror game- tends to make you imagine of a comical one. So there’s no meaning in making the music too dark and heavy too.\nSo I brushed it up with a comical feel as much as I can.\nI can’t resist this nostalgic feeling (Personally too)"
 
 [11]
 name_jp = "素敵な墓場で暮しましょ (霊界バージョン)"
 position = "0x07FB1838, 0x0014BD90, 0x00BB8F00"
 frequency = 22050
-name_en = "Let’s Live in a Lovely Cemetery (Spirit world version)"
+name_en = "Let’s Live in a Lovely Cemetery (Spirit World Version)"
 
 [12]
 name_jp = "リジッドパラダイス"
 position = "0x08B6A738, 0x000ACD40, 0x00D04A80"
 frequency = 44100
 name_en = "Rigid Paradise"
-comment_jp = "宮古 芳香のテーマです。\n\n　キョンシーといえど、基本はゾンビなのでそれっぽいエキゾチックなイントロにしてみました。しかしこの曲を書いていて途中で気付いたのですが、イントロはピラミッド風って感じですよね。\n　それってゾンビじゃなくてミイラなんじゃないかと……"
-comment_en = "Yoshika Miyako's theme.\n\nAlthough she is a Jiang Shi, she was based on a zombie, so her introduction is a little exotic. But then as I was writing it I noticed that the introduction has something of an Egyptian feel, sort of like a pyramid or something.\nBut that would be a mummy, not a zombie..."
+comment_jp = "宮古 芳香のテーマです。\n\n　キョンシーといえど、基本はゾンビなのでそれっぽいエキゾチック\n　なイントロにしてみました。しかしこの曲を書いていて途中で気付\n　いたのですが、イントロはピラミッド風って感じですよね。\n　それってゾンビじゃなくてミイラなんじゃないかと……"
+comment_en = "Yoshika Miyako's theme.\n\nAlthough she is a Jiang Shi, she was based on a zombie, so her theme's introduction is a little exotic. But then as I was writing it I noticed that the introduction has something of an Egyptian feel, sort of like a pyramid or something.\nBut that would be a mummy, not a zombie..."
 
 [13]
 name_jp = "リジッドパラダイス (霊界バージョン)"
 position = "0x0986F1B8, 0x000566A0, 0x00682540"
 frequency = 22050
-name_en = "Rigid Paradise (Spirit world version)"
+name_en = "Rigid Paradise (Spirit World Version)"
 
 [14]
 name_jp = "デザイアドライブ"
 position = "0x09EF16F8, 0x00188200, 0x01A46500"
 frequency = 44100
 name_en = "Desire Drive"
-comment_en = "The fourth stage theme.\n\nI made it a flowing song to match the rapidly changing first half of the stage.\nIt feels nice to rush through a small space at high speed.\nThis is okay in caves, but don't run in halls at school or work.\nCaves are nice. (You shouldn't run in a limestone cavern, either.)"
-comment_jp = "４面のテーマです。\n\n前半面とうって変わって流れる様な曲にしました。\n狭い空間を猛スピードでかけるのは気持ちいいですよね。\nでも洞窟では良いけど、学校や会社では走らないように。\n洞窟って良いね。（鍾乳洞でも走ってはいけません）"
+comment_en = "The fourth stage theme.\n\nI made it a flowing song to completely switch away from the first half of the game.\nIt feels nice to rush through a narrow space at high speed.\nThis is okay in caves, but don't run in halls at school or in the work office.\nCaves are nice. (You shouldn't run in a limestone cavern, either.)"
+comment_jp = "４面のテーマです。\n\n　前半面とうって変わって流れる様な曲にしました。\n　狭い空間を猛スピードでかけるのは気持ちいいですよね。\n　でも洞窟では良いけど、学校や会社では走らないように。\n　洞窟って良いね。（鍾乳洞でも走ってはいけません）"
 
 [15]
-name_jp = "デザイアドライブ(霊界バージョン)"
+name_jp = "デザイアドライブ (霊界バージョン)"
 position = "0x0B937BF8, 0x000C4100, 0x00D23280"
 frequency = 22050
-name_en = "Desire Drive (Spirit world version)"
+name_en = "Desire Drive (Spirit World Version)"
 
 [16]
 name_jp = "古きユアンシェン"
 position = "0x0C65AE78, 0x00173180, 0x01175780"
 frequency = 44100
-name_en = "Old Distant Hermit (Gu Yuan Xian)"
-comment_en = "Seiga Kaku's theme. She's a jasen. Kind of like a magician that does a large assortment of tricks. So, I aimed for a mysterious song where you never know what's going to fly out at you next. Being able to pass through walls would be useful for running away, but it's not too useful for fighting, is it? It would be a critical for nurikabe, though."
-comment_jp = "霍 青娥のテーマです。\n\n邪仙です。色んな術を使う手品師みたいなもんです。\nそんな処から怪しくて何が飛び出すのか判らない様な曲にしました。\n壁抜けの能力は逃げるのには便利そうですけど、余り直接戦闘向きじゃないですね。ぬりかべにはクリティカルですけどね。"
+name_en = "Old Yuanxian"
+comment_en = "Seiga Kaku's theme.\n\nShe's a wicked hermit. Kind of like a magician that does a large assortment of tricks.\nSo, I aimed for a suspicious song where you never know what's going to fly out at you next.\nBeing able to pass through walls would be useful for running away, but it's not too useful for fighting, is it? It would be a critical hit to a nurikabe, though."
+comment_jp = "霍 青娥のテーマです。\n　\n　邪仙です。色んな術を使う手品師みたいなもんです。\n　そんな処から怪しくて何が飛び出すのか判らない様な曲にしました。\n　壁抜けの能力は逃げるのには便利そうですけど、余り直接戦闘向き\n　じゃないですね。ぬりかべにはクリティカルですけどね。"
 
 [17]
-name_jp = "古きユアンシェン(霊界バージョン)"
+name_jp = "古きユアンシェン (霊界バージョン)"
 position = "0x0D7D05F8, 0x000B98C0, 0x008BABC0"
 frequency = 22050
-name_en = "Old Distant Hermit (Gu Yuan Xian)"
+name_en = "Old Yuanxian (Spirit World Version)"
 
 [18]
 name_jp = "夢殿大祀廟"
 position = "0x0E08B1B8, 0x00043430, 0x013A97A0"
 frequency = 44100
-name_en = "The Dream Palace Great Mausoleum"
-comment_en = "The stage 5 theme.  Since we just came barreling through a narrow cave, I decided to write a nice, expansive song to contrast it. It's so stimulating to find such enormous spaces underground, isn't it? I wanted to compose something that would make you feel that kind of excitement."
-comment_jp = "５面のテーマです。\n\n狭い洞窟を駆け抜けてきたので、今度は対照的に空間的に広がりを感じる曲にしました。\n地底に大空間があったりすると興奮しますよね。\nそんな人間の高揚感を感じられるといいなあと思って作りました。"
+name_en = "The Hall of Dreams' Great Mausoleum"
+comment_en = "The fifth stage theme.\n\nSince we just came barreling through a narrow cave, I decided to write a nice, expansive song to contrast it.\nIt's so stimulating to find such enormous spaces underground, isn't it?\nI wanted to compose something that would make you feel that kind of excitement."
+comment_jp = "５面のテーマです。\n\n　狭い洞窟を駆け抜けてきたので、今度は対照的に空間的に広がりを\n　感じる曲にしました。\n　地底に大空間があったりすると興奮しますよね。\n　そんな人間の高揚感を感じられるといいなあと思って作りました。"
 
 [19]
-name_jp = "夢殿大祀廟(霊界バージョン)"
+name_jp = "夢殿大祀廟 (霊界バージョン)"
 position = "0x0F434958, 0x00021A18, 0x009D4BD0"
 frequency = 22050
-name_en = "The Dream Palace Great Mausoleum (Spirit world version)"
+name_en = "The Hall of Dreams' Great Mausoleum (Spirit World Version)"
 
 [20]
-name_jp = "大神話神伝"
+name_jp = "大神神話伝"
 position = "0x0FE09528, 0x000A1800, 0x0198C000"
 frequency = 44100
-name_en = "Legend of the Great Gods"
-comment_en = " Mononobe no Futo's theme.  Since it's Mononobe-san, the Japanese title is pronounced \"Oomiwa Shinden\". I get the feeling there aren't even many period games that focus on the time between the Tumulus periods and Asuka periods. Maybe people just don't have any good ideas for them? This song was written with only the sound of Asuka in mind. Asukaaaaa!"
-comment_jp = "物部 布都のテーマです。\n\n物部さんですから曲の読み方は「おおみわしんわでん」です。\n時代物でも、古墳時代から飛鳥時代をテーマにしたゲームって少ない気がします。イメージが湧かないからかな？\nこの曲は、飛鳥っていう響きだけでイメージしました。あすかー！"
+name_en = "Omiwa Legend"
+comment_en = "Mononobe no Futo's theme.\n\nSince it's Mononobe-san, the title is pronounced \"Oomiwa Shinwaden\".\nI get the feeling there aren't many games that are themed around the time between the Tumulus periods and Asuka periods. Maybe people just can't picture an image of them?\nThis song was written with only the sound of Asuka in mind. Asukaaaaa!"
+comment_jp = "物部 布都のテーマです。\n\n　物部さんですから曲の読み方は「おおみわしんわでん」です。\n　時代物でも、古墳時代から飛鳥時代をテーマにしたゲームって少な\n　い気がします。イメージが湧かないからかな？\n　この曲は、飛鳥っていう響きだけでイメージしました。あすかー！"
 
 [21]
-name_jp = "大神話神伝(霊界バージョン)"
+name_jp = "大神神話伝 (霊界バージョン)"
 position = "0x11795528, 0x00050C00, 0x00CC6000"
 frequency = 22050
-name_en = "Legend of the Great Gods (Spirit world version)"
+name_en = "Omiwa Legend (Spirit World Version)"
 
 [22]
 name_jp = "小さな欲望の星空"
 position = "0x1245B528, 0x002B3E40, 0x012ECDA0"
 frequency = 44100
-name_en = "A Small Desire's Starry Sky"
-comment_en = " The sixth stage theme.  You're usually pretty exhausted when you get to stage 6, so this song is just a connector.  It's not really clear where this is, but it's probably inside the Dream Palace's Great Mausoleum. That mysterious space."
-comment_jp = "６面のテーマです。\n\n大体６面まで来るとヘトヘトなのでここは繋ぎの曲で。\n\n位置的に何処にいるのかさっぱり不明ですが、きっと夢殿大祀廟の中なんでしょう。あの不思議空間。"
+name_en = "Starry Sky of Small Desires"
+comment_en = "The sixth stage theme.\n\nYou're usually pretty exhausted by the time you reach stage 6, so this song is just a connector.\n\nIt's not really clear where this is, but it's probably inside the Hall of Dreams' Great Mausoleum. That mystery space."
+comment_jp = "６面のテーマです。\n\n　大体６面まで来るとヘトヘトなのでここは繋ぎの曲で。\n\n　位置的に何処にいるのかさっぱり不明ですが、きっと夢殿大祀廟の\n　中なんでしょう。あの不思議空間。"
 
 [23]
-name_jp = "小さな欲望の星空(霊界バージョン)"
+name_jp = "小さな欲望の星空 (霊界バージョン)"
 position = "0x137482C8, 0x00159F20, 0x009766D0"
 frequency = 22050
-name_en = "A Small Desire's Starry Sky (Spirit world version)"
+name_en = "Starry Sky of Small Desires (Spirit World Version)"
 
 [24]
-name_jp = "聖徳伝説　～　True Administrator"
+name_jp = "聖徳伝説　～ True Administrator"
 position = "0x140BE998, 0x0027B4D8, 0x01F0E1E0"
 frequency = 44100
 name_en = "Shoutoku Legend ~ True Administrator"
 comment_en = "Toyosatomimi no Miko's theme. The motif is based on a historical figure everyone knows. I figured it would be rude if it wasn't a powerful, cool song, so it turned out like this. He's suddenly been made into a fictional character recently, so I used the opportunity to move him to Gensokyo. Many thanks~"
-comment_jp = "豊聡耳の神子のテーマです。知らない人はいない歴史上の偉人がモチーフになっています。曲は力強く、そして格好良くなければ失礼だと思ったのでこんな感じに。最近になって急に架空の人物にされかかっていますが、そんな事もあって幻想郷にお引っ越しして頂きました。ありがたやー"
+comment_jp = "豊聡耳の神子のテーマです。\n\n　知らない人はいない歴史上の偉人がモチーフになっています。\n　曲は力強く、そして格好良くなければ失礼だと思ったのでこんな感じに。\n　最近になって急に架空の人物にされかかっていますが、そんな事も\n　あって幻想郷にお引っ越しして頂きました。ありがたやー"
 
 [25]
-name_jp = "神社の新しい風"
-position = "0x15FCCB78, 0x0003F600, 0x00ECF200"
-frequency = 44100
-name_en = "A New Wind At The Shrine"
-comment_en = "The ending theme. It's a liiiiiiight ending. You know, Reimu and company haven't been doing much incident solving lately."
-comment_jp = "エンディングのテーマです。かるーくエンディングです。それにしても最近異変解決していないね、霊夢達。"
-
-[26]
-name_jp = "デザイアドリーム"
-position = "0x16E9BD78, 0x0170D100, 0x0194B400"
-frequency = 44100
-name_en = "Desire Dream"
-comment_en = "The staff roll theme. This is a different version of Desire Drive.It's mostly lost the sense of speed, but maybe it has a floating feeling now instead. Lately I've been wondering if there's a real point to the staff roll."
-comment_jp = "スタッフロールのテーマです。 デザイアドライブの別バージョンです。スビード感は少なくなったけど、浮遊感が生まれているかな。 最近、スタッフロールの存在意義が危ぶまれています。"
-
-[27]
 name_jp = "妖怪裏参道"
 position = "0x187E7178, 0x00163C80, 0x016E8320"
 frequency = 44100
 name_en = "Youkai Back Shrine Road"
-comment_en = "The extra stage theme. You never know what kind of retro youkai might pop onto the road with this song. Youkai always seem to have such fun. That's probably because they know exactly what their purpose in life is. In that case, there's one way to be sure to enjoy life. Accept whatever you've got now."
-comment_jp = "エキストラステージのテーマです。\n\n如何にもレトロな妖怪が出そうな参道というイメージで。\n妖怪達はどんな時も楽しそうですよね。\nそれは妖怪の存在意義がハッキリしていて迷いが無いからでしょう。\nならば、楽しく生きる方法は一つ。今のままを受け入れるのじゃ。"
+comment_en = "The extra stage theme.\n\nYou never know what kind of retro youkai might pop onto the road with this song.\nYoukai always seem to have such fun no matter the circumstances.\nThat's probably because they're enlightened by knowing exactly what their purpose in life is.\nIn that case, there's one way to be sure to enjoy life. Accept whatever you've got now."
+comment_jp = "エキストラステージのテーマです。\n\n　如何にもレトロな妖怪が出そうな参道というイメージで。\n　妖怪達はどんな時も楽しそうですよね。\n　それは妖怪の存在意義がハッキリしていて迷いが無いからでしょう。\n　ならば、楽しく生きる方法は一つ。今のままを受け入れるのじゃ。"
 
-[28]
-name_jp = "妖怪裏参道(霊界バージョン)"
+[26]
+name_jp = "妖怪裏参道 (霊界バージョン)"
 position = "0x19ECF498, 0x000B1E40, 0x00B74190"
 frequency = 22050
-name_en = "Youkai Back Shrine Road (Spirit world version)"
+name_en = "Youkai Back Shrine Road (Spirit World Version)"
 
-[29]
-name_jp = "佐渡のニッ岩"
+[27]
+name_jp = "佐渡の二ッ岩"
 position = "0x1AA43628, 0x00249AA0, 0x0185B320"
 frequency = 44100
-name_en = "Futatsuiwa From Sado"
-comment_en = " Mamizou Futatsuiwa's theme.  It's full of that old tanuki feeling. Both foxes and tanuki are seen as tricksters, but of the two, tanuki seem more laid-back, right? So, they're probably not well suitedtowards danmaku battles, but as I thought, the danmaku morphed into something else..."
-comment_jp = " 二ッ岩 マミゾウのテーマです。\n\n狸感たっぷりに仕上げました。\n狸も狐も人を化かすイメージで被りますが、狸の方がのんびりしているイメージなんですよね。だから弾幕戦闘には向かないかと思いましたが、案の定、弾幕は何か別の物に変化して……。"
+name_en = "Futatsuiwa from Sado"
+comment_en = "Mamizou Futatsuiwa's theme.\n\nIt's full of that old tanuki feeling.\nBoth foxes and tanuki are seen as tricksters, but of the two, tanuki seem more laid-back, right? So, they're probably not well suited towards danmaku battles, but as expected, the danmaku morphed into something else and..."
+comment_jp = "二ッ岩 マミゾウのテーマです。\n\n　狸感たっぷりに仕上げました。\n　狸も狐も人を化かすイメージで被りますが、狸の方がのんびりして\n　いるイメージなんですよね。だから弾幕戦闘には向かないかと思い\n　ましたが、案の定、弾幕は何か別の物に変化して……。"
 
-[30]
-name_jp = "佐渡のニッ岩(霊界バージョン)"
+[28]
+name_jp = "佐渡の二ッ岩 (霊界バージョン)"
 position = "0x1C29E948, 0x00124D50, 0x00C2D990"
 frequency = 22050
-name_en = "Futatsuiwa From Sado (Spirit world version)"
+name_en = "Futatsuiwa from Sado (Spirit World Version)"
+
+[29]
+name_jp = "神社の新しい風"
+position = "0x15FCCB78, 0x0003F600, 0x00ECF200"
+frequency = 44100
+name_en = "A New Wind at the Shrine"
+comment_en = "The ending theme. It's a liiiiiiight ending. You know, Reimu and company haven't been doing much incident solving lately."
+comment_jp = "エンディングのテーマです。\n\n　かるーくエンディングです。\n\n\n　それにしても最近異変解決していないね、霊夢達。"
+
+[30]
+name_jp = "デザイアドリーム"
+position = "0x16E9BD78, 0x0170D100, 0x0194B400"
+frequency = 44100
+name_en = "Desire Dream"
+comment_en = "The staff roll theme. This is a different version of Desire Drive.The sense of speed has mostly been lost, but maybe it has a floating feeling now instead. Lately I've been wondering if there's a real point to the staff roll."
+comment_jp = "スタッフロールのテーマです。\n\n　デザイアドライブの別バージョンです。\n　スビード感は少なくなったけど、浮遊感が生まれているかな。\n\n　最近、スタッフロールの存在意義が危ぶまれています。"
 
 [31]
 name_jp = "プレイヤーズスコア"

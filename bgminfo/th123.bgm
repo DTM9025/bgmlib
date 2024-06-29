@@ -15,7 +15,7 @@ tracks = 24
 
 [update]
 wikipage = "Touhou_Hisoutensoku/Music"
-wikirev = 182497
+wikirev = 372168
 
 [composer]
 cmp1 = "あきやまうに"
@@ -26,7 +26,7 @@ cmp2 = "ZUN"
 
 [01]
 name_jp = "君はあの影を見たか？"
-name_en = "Did You See that Shadow?"
+name_en = "Did You See That Shadow?"
 composer = 1
 filename = "data/bgm/op2"
 
@@ -68,13 +68,13 @@ filename = "data/bgm/st32"
 
 [08]
 name_jp = "霊知の太陽信仰　～ Nuclear Fusion"
-name_en = "Sun Worship of Gnosis ~ Nuclear Fusion"
+name_en = "Solar Sect of Mystic Wisdom ~ Nuclear Fusion"
 composer = 1
 filename = "data/bgm/st33"
 
 [09]
 name_jp = "ぼくらの非想天則"
-name_en = "Our Hisou Tensoku"
+name_en = "Our Hisoutensoku"
 composer = 1
 filename = "data/bgm/ta21"
 
@@ -86,7 +86,7 @@ filename = "data/bgm/st35"
 
 [11]
 name_jp = "空に浮かぶ物体Ｘ"
-name_en = "X, the Floating Objects in the Sky"
+name_en = "X, the Floating Object in the Sky"
 composer = 2
 filename = "data/bgm/st36"
 
@@ -102,7 +102,7 @@ filename = "data/bgm/st40"
 
 [13]
 name_jp = "恋色マジック"
-name_en = "Love-Colored Magic"
+name_en = "Love-Coloured Magic"
 composer = 1
 filename = "data/bgm/st41"
 
@@ -176,7 +176,7 @@ filename = "data/bgm/ta06"
 
 [24]
 name_jp = "東方妖恋談 (世紀末バージョン)"
-name_en = "Mystic Oriental Love Consultation (End of Century version)"
+name_en = "Eastern Mystical Love Consultation (Century's End Version)"
 composer = 1
 filename = "data/bgm/st99"
 

@@ -17,7 +17,7 @@ tracks = 7
 
 [update]
 wikipage = "Uwabami_Breakers/Music"
-wikirev = 184446
+wikirev = 331720
 
 [thvorbis]
 patchclass = "generic"
@@ -54,8 +54,14 @@ position = "0x0235032C, 0x000D7BC0, 0x00865EEC"
 comment2_en = "(おまけ_骨折飲料.txt)\nIn the final stages of production, someone uttered the beautiful line, \"Actually, we don't have stage 1 or 2 boss themes\", so I did my best to prepare another song.\n\nSince it's a boss theme, we thought it should be pretty tense ... And someone also thought \"We should have a Zapanese-style song\", so the request ended up being for \"A high-tension Eastern-sounding theme\", but I racked my brains trying to think up something that fit for a while with no luck.\n\nLater I was watching some videos of tsugaru shamisen players on Youtube, and I ended up finishing something like this song. The influence of that tsugaru shamisen fades in and out of the melody in the second half ... oh, man, I'm really laying it all bare, here!"
 comment2_jp = "(おまけ_骨折飲料.txt)\n制作も大詰めの段階で、「実は１面ボスと２面ボスの曲が無い訳さ」と\nいう素敵発言を受け、頑張ってもう１曲用意しました。\n\nボス曲だから、テンション高めの曲だよね…と思いつつ「『ざぱにーず』\nな感じの曲があれば」という意見もあったので、要求は「和風でテンショ\nン高め」となったわけですが、その要求を満たす曲がまるで思いつかず\nしばらく頭を抱えてました。\n\nその後、YouTubeで津軽三味線の動画を見まくっているうち、どうにか\n思いついて書き上げたのがこの曲です。後半のメロディラインに、津軽\n三味線動画の影響が見え隠れ…というかモロ見えしてますね！"
 
+[04]
+name_jp = "Valse Alcoholique"
+name_en = "Valse Alcoholique"
+composer = 2
+position = "0x02BB6218, 0x001FDFF4, 0x01385F84"
+
 [05]
-name_jp = "chase the Twilight"
+name_jp = "chase the twilight"
 name_en = "chase the twilight"
 composer = 1
 position = "0x007649D8, 0x00073BB0, 0x00845754"
@@ -67,12 +73,6 @@ name_jp = "呑んべぇのレムリア"
 name_en = "A Drunkard's Lemuria"
 composer = 3
 position = "0x00FAA12C, 0x00115800, 0x013A6200"
-
-[04]
-name_jp = "Valse Alcoholique"
-name_en = "Valse Alcoholique"
-composer = 2
-position = "0x02BB6218, 0x001FDFF4, 0x01385F84"
 
 [07]
 name_jp = "絶対大丈夫だよ！！いくら飲んでも朝が来るよ！！。"

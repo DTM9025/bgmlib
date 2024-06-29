@@ -1,4 +1,4 @@
-# Music Room Interface Info
+﻿# Music Room Interface Info
 
 [game]
 name = "東方緋想天　～ Scarlet Weather Rhapsody"
@@ -16,7 +16,7 @@ tracks = 31
 
 [update]
 wikipage = "Scarlet_Weather_Rhapsody/Music"
-wikirev = 158985
+wikirev = 357028
 
 [composer]
 cmp1 = "あきやまうに"
@@ -27,7 +27,7 @@ cmp2 = "ZUN"
 
 [01]
 name_jp = "緋想天"
-name_en = "Sky of Scarlet Perception"
+name_en = "Heaven of Scarlet Perception"
 composer = 1
 filename = "data/bgm/op"
 
@@ -45,7 +45,7 @@ filename = "data/bgm/st00"
 
 [04]
 name_jp = "甲論乙駁"
-name_en = "Argue For And Against"
+name_en = "Argue for and Against"
 composer = 1
 filename = "data/bgm/ta01"
 
@@ -93,7 +93,7 @@ filename = "data/bgm/ta04"
 
 [12]
 name_jp = "雲外蒼天"
-name_en = "Skies Beyond The Clouds"
+name_en = "Skies Beyond the Clouds"
 composer = 1
 filename = "data/bgm/ta02"
 
@@ -102,7 +102,7 @@ name_jp = "黒い海に紅く　～ Legendary Fish"
 name_en = "Crimson in the Black Sea ~ Legendary Fish"
 composer = 2
 filename = "data/bgm/st04"
-comment_jp = "永江衣玖のテーマです\n\n結構昔の話ですが、水族館でリュウグウノツカイのミイラを見ました。\n写真では見た事はあったのですが、やはり実物を見るとインパクトが違います。\n平べったくて異常に長い不思議な魚です。\nその異形な魚は、とてもこの世の物とは思えなません。\n\nそんな衣玖のテーマ曲です。"
+comment_jp = "　永江衣玖のテーマです\n\n　　結構昔の話ですが、水族館でリュウグウノツカイのミイラを見ました。\n　　写真では見た事はあったのですが、やはり実物を見るとインパクトが\n　　違います。平べったくて異常に長い不思議な魚です。\n　　その異形な魚は、とてもこの世の物とは思えなません。\n\n　　そんな衣玖のテーマ曲です。"
 comment_en = "Iku Nagae's theme.\n\nThis is a pretty old story, but I saw an oarfish mummy in an aquarium once.\nI'd seen pictures before, but seeing it in person leaves a totally different impact.\nIt's a flat and unusually long fish.\nIt's hard to believe it's something from this world.\n\nThis is the theme song for that sort of Iku."
 
 [14]
@@ -113,19 +113,19 @@ filename = "data/bgm/ta07"
 
 [15]
 name_jp = "有頂天変　～ Wonderful Heaven"
-name_en = "Catastrophe in Bhava-agra ~ Wonderful Heaven"
+name_en = "Catastrophe in Bhavaagra ~ Wonderful Heaven"
 composer = 2
 filename = "data/bgm/st05"
-comment_jp = "比那名居　天子のテーマです。\n\nもの凄く我が儘で自分勝手なキャラをイメージしてました。\nその我が儘さと言えばレミリアとタメをはれる程度。\n\n本当の天界は悟ってしまったような人格者ばかりなのですが、中にはこういう不良もいる訳です。\nでも、不良の方が人間味があります。逆に言えば、彼女は天界のオアシスかも知れませんね。\n\nまあ曲とは余り関係無いんですけどね。"
+comment_jp = "　比那名居　天子のテーマです。\n\n　　もの凄く我が儘で自分勝手なキャラをイメージしてました。\n　　その我が儘さと言えばレミリアとタメをはれる程度。\n\n　　本当の天界は悟ってしまったような人格者ばかりなのですが、中には\n　　こういう不良もいる訳です。\n　　でも、不良の方が人間味があります。逆に言えば、彼女は天界のオア\n　　シスかも知れませんね。\n\n　　まあ曲とは余り関係無いんですけどね。"
 comment_en = "Tenshi Hinanawi's theme.\n\nThe key image is of a very willful and self-centered character.\nShe's as self-centered as Remilia is.\n\nHeaven is really full of enlightened persons of character, but even among them there are inferior ones like her.\nStill, that gives her an almost human feel. Turning it around, you might say she's an oasis within Heaven.\n\nNot that this has anything to do with the song, really."
 
 [16]
 name_jp = "幼心地の有頂天"
-name_en = "Bhava-agra As Seen Through a Child's Mind"
+name_en = "Bhavaagra As Seen Through a Child's Mind"
 composer = 2
 filename = "data/bgm/st06"
-comment_jp = "ラストスペルのテーマです。\n\n有頂天変を自分なりに宇宙っぽくしました。\n宇宙といえばパイプオルガンですよね。"
-comment_en = "The Last Spell theme.\n\nI made \"Catastrophe in Bhava-agra\" to sound space-like in my own way.\nPipe organs are very space-like, aren't they?"
+comment_jp = "　ラストスペルのテーマです。\n\n　　有頂天変を自分なりに宇宙っぽくしました。\n　　宇宙といえばパイプオルガンですよね。"
+comment_en = "The Last Spell theme.\n\nI made \"Catastrophe in Bhavaagra\" to sound space-like in my own way.\nPipe organs are very space-like, aren't they?"
 
 [17]
 name_jp = "暮色蒼然"
@@ -135,7 +135,7 @@ filename = "data/bgm/ta06"
 
 [18]
 name_jp = "東方緋想天"
-name_en = "Oriental Sky of Scarlet Perception"
+name_en = "Eastern Heaven of Scarlet Perception"
 composer = 1
 filename = "data/bgm/sr"
 
@@ -145,7 +145,7 @@ filename = "data/bgm/sr"
 
 [19]
 name_jp = "東方妖恋談"
-name_en = "Mystic Oriental Love Consultation"
+name_en = "Eastern Mystical Love Consultation"
 composer = 1
 filename = "data/bgm/st10"
 
@@ -168,7 +168,7 @@ composer = 1
 filename = "data/bgm/st13"
 
 [23]
-name_jp = "広有射怪鳥事 ～ Till When？"
+name_jp = "広有射怪鳥事　～ Till When？"
 name_en = "Hiroari Shoots a Strange Bird ~ Till When?"
 composer = 1
 filename = "data/bgm/st14"
@@ -181,19 +181,19 @@ filename = "data/bgm/st15"
 
 [25]
 name_jp = "幽雅に咲かせ、墨染の桜　～ Border of Life"
-name_en = "Bloom Nobly, Cherry Blossoms of Sumizome ~ Border of Life"
+name_en = "Bloom Nobly, Ink-Black Cherry Blossom ~ Border of Life"
 composer = 1
 filename = "data/bgm/st16"
 
 [26]
 name_jp = "亡き王女の為のセプテット"
-name_en = "Septette for the Dead Princess"
+name_en = "Septette for a Dead Princess"
 composer = 1
 filename = "data/bgm/st17"
 
 [27]
-name_jp = "夜が降りてくる ～ Evening Star"
-name_en = "Night Falls ~ Evening Star"
+name_jp = "夜が降りてくる"
+name_en = "Night Falls"
 composer = 1
 filename = "data/bgm/st18"
 

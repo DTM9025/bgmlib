@@ -24,7 +24,7 @@ notice = "Warning!\n\nThe Vorbis patch for this game is fairly unstable,\nand ma
 
 [update]
 wikipage = "Immaterial_and_Missing_Power/Music"
-wikirev = 182483
+wikirev = 372167
 
 [composer]
 cmp1 = "あきやまうに"
@@ -44,15 +44,15 @@ comment_en = "The music for opening and title scene.\nLike other Touhou, it star
 
 [02]
 name_jp = "東方妖恋談"
-name_en = "Mystic Oriental Love Consultation"
+name_en = "Eastern Mystical Love Consultation"
 composer = 2
 filename = "wave\bgm\00a"
 comment_jp = "東方夢時空の博麗霊夢のテーマより。\n昔のFM音源な曲も結構好きだったりします。"
 comment_en = "Based on Reimu's theme from Phantasmagoria of Dim.Dream.\nI really liked the old FM synth music, too."
 
 [03]
-name_jp = "少女綺想曲 ～ Capriccio"
-name_en = "Maiden's Capriccio"
+name_jp = "少女綺想曲　～ Capriccio"
+name_en = "Maiden's Capriccio ~ Capriccio"
 composer = 1
 filename = "wave\bgm\00b"
 comment_jp = "夜の霊夢ステージ曲です。曲名のまま少女綺想曲のアレンジです。\n神社ということでエセ和風な感じになるように作りました。多分。\nこの曲はすでに夏前に作り終えていたのですが、永夜抄の少女綺想曲を聞いて、いじるところ間違えたかなー、と微妙な気分になったりも。\nまあ同じ方向性で作ってしまっては、単なる劣化コピーとなってしまうので、これはこれで良かったのだろうと思うことにします。"
@@ -60,7 +60,7 @@ comment_en = "Reimu's night-time theme.\nAs the title says, it's an arranged ver
 
 [04]
 name_jp = "恋色マジック"
-name_en = "Love-coloured Magic"
+name_en = "Love-Coloured Magic"
 composer = 2
 filename = "wave\bgm\01a"
 comment_jp = "東方封魔録の霧雨魔理沙のテーマより。\n結局落ち着いた雰囲気になりました。\n永夜抄でマスタースパークにパワーアップするんですね（未来形"
@@ -83,7 +83,7 @@ comment_jp = "東方紅魔郷の5面の道中曲より。\nメイド＝ロック
 comment_en = "From the stage 5 theme in Embodiment of Scarlet Devil.\nIt looks like the common theme is \"Maid = rock music\".\nMy initial image was a North European metal rock piece, but it's just not hard enough."
 
 [07]
-name_jp = "月時計 ～ ルナ・ダイアル"
+name_jp = "月時計　～ ルナ・ダイアル"
 name_en = "Lunar Clock ~ Lunar Dial"
 composer = 1
 filename = "wave\bgm\02b"
@@ -92,7 +92,7 @@ comment_en = "Sakuya's night theme.\nIt feels like all the hard edges of the ori
 
 [08]
 name_jp = "ブクレシュティの人形師"
-name_en = "The Doll Maker of Bucresti"
+name_en = "The Doll Maker of Bucuresti"
 composer = 2
 filename = "wave\bgm\03a"
 comment_jp = "東方妖々夢の3面の道中曲より。\nアリスの住む森は昼でも夜でも暗いですね。\n人形の種類が多いので、何度か雰囲気変えたつもりですが、あまり変わってなかったり。"
@@ -107,23 +107,23 @@ comment_jp = "夜のアリスステージ曲です。\nこの曲は五拍子だ�
 comment_en = "Alice's night-time stage theme.\nThis song has a five-beat rhythm and weird sounds stuck into it, so it ought to fit the character's performance pretty well.\nBut because I tried to throw in so many unusual elements, eventually I noticed the parts that made the original song great were gone. Hmm.\nThis has nothing to do with the music, but I don't think the 2P color is quite right."
 
 [10]
-name_jp = "ラクトガール ～ 少女密室"
+name_jp = "ラクトガール　～ 少女密室"
 name_en = "Locked Girl ~ Girl's Secret Room"
 composer = 2
 filename = "wave\bgm\04a"
 comment_jp = "東方紅魔郷のパチュリのテーマより。\n元は暗めの曲ですが、萃夢想のパチェは元気そうです。（外出てるし"
-comment_en = "Based on Patchouli's theme from Embodiment of Scarlet Devil.\nThe original song is pretty dark, but Patchu looks pretty energetic in IaMP. (She even goes outside.)"
+comment_en = "Based on Patchouli's theme from Embodiment of Scarlet Devil.\nThe original song is pretty dark, but Pache looks pretty energetic in IaMP. (She even goes outside.)"
 
 [11]
 name_jp = "ヴワル魔法図書館"
-name_en = "Voile Magic Library"
+name_en = "Voile, the Magic Library"
 composer = 1
 filename = "wave\bgm\04b"
 comment_jp = "夜のパチュリ―ステージ曲です。\nステージ自体は夜ですが、照明で昼ステージよりも明るいので、ちょっと派手にしてみました。\n結果として、エキサイティングな動きすぎる大図書館になっております。\n後半は元のイメージを残しつつ、自分でもよく分からない風味に。"
 comment_en = "Patchouli's night-time stage theme.\nThis is for the night-time stage, but it's actually brighter than the daytime stage because of all the lights, so I made it louder.\nAs a result, it turned into the Exciting, Ever-Moving Great Library.\nThe latter half retains elements of the original, though even I cannot recognize very much."
 
 [12]
-name_jp = "広有射怪鳥事 ～ Till When?"
+name_jp = "広有射怪鳥事　～ Till When?"
 name_en = "Hiroari Shoots a Strange Bird ~ Till When?"
 composer = 2
 filename = "wave\bgm\05a"
@@ -131,8 +131,8 @@ comment_jp = "東方妖々夢の妖夢のテーマより。\n背景が墓地な�
 comment_en = "Theme of Youmu from Perfect Cherry Blossom.\nThe setting is a graveyard, so this song feels like there's nothing left to hold onto.\nBy the way, I prefer \"meido\" (maids) to \"meidou\" (the Netherworld). (Hee)"
 
 [13]
-name_jp = "東方妖々夢 ～ Ancient Temple"
-name_en = "Mystic Oriental Dream ~ Ancient Temple"
+name_jp = "東方妖々夢　～ Ancient Temple"
+name_en = "Eastern Mystical Dream ~ Ancient Temple"
 composer = 1
 filename = "wave\bgm\05b"
 comment_jp = "夜の妖夢ステージ曲です。\nこの曲は原曲のメロディーを割と普通に使ってると思います。\n格闘ゲームとしてはあまりよろしくないイントロですが、会話中に曲が変わってタイミング良く戦闘に入った場合、良い感じで聞けるかもしれません。"
@@ -140,7 +140,7 @@ comment_en = "Youmu's theme in the night.\nThe melody of the original song comes
 
 [14]
 name_jp = "亡き王女の為のセプテット"
-name_en = "Septette for the Dead Princess"
+name_en = "Septette for a Dead Princess"
 composer = 2
 filename = "wave\bgm\06a"
 comment_jp = "東方紅魔郷のレミリアのテーマより。\n元の後半部分抜萃してみました。\nギターのところ、人が弾くには無理がありそうですが、やっぱり妖怪なら大丈夫なんですかね？（某3姉妹とか"
@@ -148,7 +148,7 @@ comment_en = "Based on Remilia's theme from Embodiment of Scarlet Devil.\nI trie
 
 [15]
 name_jp = "幽雅に咲かせ、墨染の桜 ～ Border of Life"
-name_en = "Bloom Nobly, Cherry Blossoms of Sumizome ~ Border of Life"
+name_en = "Bloom Nobly, Ink-Black Cherry Blossom ~ Border of Life"
 composer = 2
 filename = "wave\bgm\07a"
 comment_jp = "東方妖々夢の幽々子のテーマより。\n平和でない丑三つ時を想定してみました。\n夢物語に終わりましたが――。"
@@ -163,7 +163,7 @@ comment_jp = "ストーリーモード宴会直前の戦闘のテーマです。
 comment_en = "Theme of the battle just before the feast in Story Mode.\nHowever, the character this plays for depends on the character you control.\nThis song depicts the suspicion and anger of the heroine building up until it eventually explodes.\nThe song is all introduction except the final short main part."
 
 [17]
-name_jp = "夜が降りてくる ～ Evening Star"
+name_jp = "夜が降りてくる　～ Evening Star"
 name_en = "Night Falls ~ Evening Star"
 composer = 3
 filename = "wave\bgm\08a"
@@ -173,7 +173,7 @@ comment2_jp = "(『東方文花帖』の『幻想の音覚』より)\nシュー�
 comment2_en = "(Bohemian Archive in Japanese Red Music Columns)\nMaking songs for non-shooting games gives me a number of problems, but making this one for whatever reason was a little too normal. This is the theme for that troublesome youkai, Yukari Yakumo. That's why I arranged this song as if it had a boundary so there are so images. On the first half of the boundary, there's an ominous feeling, and on the second, a more pleasant feeling. I particularly like the feel of how fast the POV changes when it enters the pleasant side.\nWhen I listen to this song, I rapidly envision a field of sight over a shrine in the evening. If you listen to it, you'll immediately know it's a Touhou song, but somehow it feels different from the others. This isn't a theory; there is a difference in the \"illusionary component\" of this song. It's the effect of my change in mindset making a song for a non-shooting game."
 
 [18]
-name_jp = "御伽の国の鬼が島 ～ Missing Power"
+name_jp = "御伽の国の鬼が島　～ Missing Power"
 name_en = "Oni's Island in the Fairyland ~ Missing Power"
 composer = 3
 filename = "wave\bgm\09a"
@@ -192,7 +192,7 @@ comment_en = "The music played at the ending scene.\nI can't help being a little
 
 [20]
 name_jp = "東方萃夢想"
-name_en = "Oriental Memory of Forgathering Dream"
+name_en = "Eastern Memory of Forgathering Dream"
 composer = 1
 filename = "wave\bgm\sys99_ed"
 comment_jp = "スタッフロールの曲です。\nオープニングは狙った（結果はともかく）ので、こっちでは好き勝手やってみました。\nスタッフロールという性質上、割と制約が無いですし。\n曲のタイミングで映像が動くのは凄く気持ち良いんですけど、処理落ちしてずれたりしたら泣くことにします。\nちなみに、メロディオンの音は自前演奏です。"
@@ -292,7 +292,7 @@ name_en = "Swift Battle"
 composer = 1
 filename = "wave\bgm\61"
 comment_jp = "盛り上がる曲にする必要があるのに、後に控えている格闘部分よりは抑えなくてはならない、という微妙な位置なのが格闘ゲームの会話曲――とか最初は考えていたはずなのですが、激しく自己主張しています。\n展開も何も無く割と一直線に分かりやすく。\nちなみに開発コード名は「岩男」でした。"
-comment_en = "The conversation theme of fighting game should be excited but calmer than that of the coming battle part... I thought like that at first, though I thoroughly ignored.\nIt has no processes and is very simple.\nBy the way, the code name was \"Iwao\" (He is referencing Tohru Iwao, the creator of Megaman)."
+comment_en = "The conversation theme of fighting game should be excited but calmer than that of the coming battle part... I thought like that at first, though I thoroughly ignored.\nIt has no processes and is very simple.\nBy the way, the code name was \"Iwao\" (He is referencing \"Rockman\", or the original name of Megaman in Japan — respectively \"岩\" and \"男\" are \"rock\" and \"man\" in a surprisingly rigid translation. Some japanese call the character or the entire series in that way as a joke)."
 
 [33]
 name_jp = "禍機"

@@ -15,7 +15,7 @@ tracks = 15
 
 [update]
 wikipage = "Highly_Responsive_to_Prayers/Music"
-wikirev = 182479
+wikirev = 366683
 
 [01]
 name_jp = "A Sacred Lot"
@@ -45,7 +45,7 @@ name_en = "Highly Responsive to Prayers"
 name_jp = "東方怪奇談"
 comment_en = "I composed this song for the first game I ever made, so I put quite a bit of thought into it.\nAll the \"Touhou OOO\"-style game titles also stem from this piece."
 comment_jp = "この曲、私が生まれて初めて作ったゲーム用の曲です。だから、かなり思い入れがあります。\n東方○○○っていうゲームタイトルもこの曲から取りました。"
-name_en = "Strange Oriental Discourse"
+name_en = "Eastern Strange Discourse"
 
 [06]
 name_jp = "天使伝説"

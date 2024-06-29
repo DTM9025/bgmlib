@@ -1,4 +1,4 @@
-# Music Room Interface Info
+﻿# Music Room Interface Info
 
 [game]
 name = "The Grimoire of Marisa"
@@ -10,6 +10,10 @@ year = 2009
 packmethod = 0
 
 tracks = 2
+
+[update]
+wikipage = "The_Grimoire_of_Marisa_(CD)"
+wikirev = 342488
 
 [01]
 name_jp = "魔法使いの憂鬱"

@@ -15,17 +15,17 @@ tracks = 30
 
 [update]
 wikipage = "Lotus_Land_Story/Music"
-wikirev = 182485
+wikirev = 361034
 
 [01]
 name_jp = "幻想郷　～ Lotus Land Story"
-comment_en = "It's the usual. Though we've just about had enough (^^;;\nI wonder what makes this a Japanese-style song.\nHm, well, I do like the song itself quite a bit, but...\nNot much else, aside from the fact that it doesn't really match the title screen (^^;;;\nWell, I suppose even that (not matching the title picture) is a trademark of this series (^^; (Not really)"
+comment_en = "It's the usual. And we've just about had them enough already (^^;;\nI wonder what makes a song Japanese-styled.\nHm, well, I do like the song itself quite a bit, but...\nNot much else, aside from the fact that it doesn't really match the title screen (^^;;;\nWell, I suppose even that (not matching the title picture) is a trademark of this series (^^; (Not really)"
 name_en = "Gensokyo ~ Lotus Land Story"
 comment_jp = "あいかわらずです。もういいんですけどね（^^;;\nどういった曲が和風なんでしょうね。\nう～んこの曲自体は結構好きなんですが・・・\nタイトルの絵と合わないことこの上無いですね（^^;;;\nまぁ、それ（絵と合わないこと）こそが、このシリーズの味なのかも（^^; （そんなことない）"
 
 [02]
 name_jp = "Witching Dream"
-comment_en = "Ye~s. This song turned out kind of cool. But, it might be a little too dark.\nThere's that drum pattern in the second half that's almost out of desperation. Just a little.\nYep. Ah, well."
+comment_en = "Weeell. This song turned out kind of a pretty cool one. But, it might be a little too dark.\nThere's that drum pattern in the second half that's almost out of desperation. Just a little.\nYep. Ah, well."
 name_en = "Witching Dream"
 comment_jp = "う～ん。ちょっとかっこよさげな曲になりましたね。 でも、ちょっと暗すぎかな。\n後半、やけになった様なドラムパターンがあります。ちょっと、やけ。\nう～ん。まぁその。"
 
@@ -115,7 +115,7 @@ comment_jp = "すこし軽快な曲にしました（うそ）\nサビはかな�
 
 [17]
 name_jp = "メイド幻想　～ Icemilk Magic"
-comment_en = "The younger sister, Mugetsu's, theme. For some reason it feels like a maid song.\nThis is a pretty cool song, isn't it? Even though it's short. (Because it's short?)\nWell, in any case, it turned out to be a maid song like this."
+comment_en = "The younger sister, Mugetsu's, theme. Somehow, she looks like a maid.\nThis is a pretty cool song, isn't it? Even though it's short. (Because it's short?)\nWell, in any case, it turned out to be a pretend-maid song like this."
 name_en = "Illusion of a Maid ~ Icemilk Magic"
 comment_jp = "妹の夢月のテーマです。何故かメイドみたいなかっこです。\n曲は、なかなかかっこいいんじゃないかな？短いけど（短いから？）\nまぁ、うそっこメイドさんっぽい曲になったよね。"
 

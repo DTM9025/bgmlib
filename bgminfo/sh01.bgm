@@ -15,7 +15,7 @@ tracks = 20
 
 [update]
 wikipage = "Shuusou_Gyoku/Music"
-wikirev = 182492
+wikirev = 362406
 
 [01]
 name_jp = "秋霜玉　～ Clockworks"
@@ -24,6 +24,8 @@ comment3_jp = "(創曲幻想.txt)\nこれは、タイトルです。\nいやま�
 comment2_en = "(Music room)\nThis is the title theme.\n\nHey. I'm ZUN.\nIn Shuusou Gyoku here, I've gotten to have fun making game music for the first time in a while.\n\nBut, this song is too dark (lol)\nOr, maybe it's the same as always (^^;"
 comment2_jp = "(Music room)\nタイトル曲です。\n\nど～も。ＺＵＮです。\n秋霜玉は久しぶりのゲーム曲ということで楽しく作らせてもらいました。\n\nでも、この曲は暗すぎるだよね（笑）\nそれともいつも通り（＾＾；"
 name_en = "Shuusou Gyoku ~ Clockworks"
+comment4_en = "(ssg_01.txt from 東方幻想的音楽)\n Since it's a short and dark song in the first place,\nthis game it became a short and dark song."
+comment4_jp = "(ssg_01.txt from 東方幻想的音楽)\n \nもともと短くて暗い曲だったので、暗くて短い曲になりました。\nそもそも、こんなに暗い曲創るつもりなんて微塵もなかったのに。あ、嘘、微塵はあった、\nいや、ちょっとあった... いや、結構...(^^;\n\nものすごく迷ったんですけどね。この曲も作成コミケ一週間前位だったし、ね。\nう～ん。でも、ネームレジストよりはましだよね(^^;;"
 
 [02]
 name_jp = "フォルスストロベリー"
@@ -32,14 +34,18 @@ comment3_jp = "(創曲幻想.txt)\nFalse Strawberry ：偽苺\n設定より、�
 comment2_en = "(Music room)\nThe first stage theme.\n\nI tried making it in the image of Western countries, but it ended up like this ...\n\nStill, I think it feels very first stage-ish (^^;\n\nI tried to do things with the main section's piano that I couldn't really express well with Touhou-era FM."
 comment2_jp = "(Music room)\n１面テーマです。\n\n西洋をイメージして創るつもれでしたが、結果はそんなでも．．．\n\nとりあえず１面っぽさは出てると思う（＾＾；\n\nサビのピアノは東方の時ＦＭで表現出来なかった事をやってみました。"
 name_en = "False Strawberry"
+comment4_en = "(ssg_02.txt from 東方幻想的音楽)\nThis was the very first song created for Shuusou Gyoku. (2000/02)\nI remember I was told to put the peak of the song at the same time as the boss appearance.\n\nThe peak was made by playing the piano whilst I was drunk (quality from my intoxicated state (^^;)\nI guess I'm nothing but a drunken programmer (lol)"
+comment4_jp = "(ssg_02.txt from 東方幻想的音楽)\n秋霜玉の中では一番最初に創った曲です。(2000/02)\nサビと同時に中ボス出してね、とか注文した記憶があります。\n\nサビのピアノは陶酔しながら（酩酊しながら（^^;）弾いて創って\nいたりする（そんなんばっかだね、アルコオルプログラマ(ぉ）"
 
 [03]
 name_jp = "プリムローズシヴァ"
 comment3_en = "(創曲幻想.txt)\nPrimrose Shiver: a shivering primrose\nA plant name to go with False Strawberry. It has a girlish atmosphere and sound.\nI always make songs like that. (lol)"
 comment3_jp = "(創曲幻想.txt)\nPrimrose Shiver ：戦慄のプリムローズ（桜草）\nフォルス～に合わして植物系で。少女系の雰囲気と響きでこんな感じ。\nいつもこんな感じ（笑）"
-comment2_en = "(Music room)\nThe first stage boss, Miria's, theme.\n\nI've always thought the first stage boss theme is hard (^^;\nI paid close attention to not making this too dark during composition. Maybe because of that, this song isn't too dark.\n\nI think the main melody is a type I haven't made before."
+comment2_en = "(Music room)\nThe first stage boss, Milia's, theme.\n\nI've always thought the first stage boss theme is hard (^^;\nI paid close attention to not making this too dark during composition. Maybe because of that, this song isn't too dark.\n\nI think the main melody is a type I haven't made before."
 comment2_jp = "(Music room)\n１面ボス、ミリアのテーマです。\n\nいつも思う、１面ボスの曲って難しい（＾＾；\n今回は暗くならないように注意して創りました。そのかいあってか、そんなに暗くないです。\n\nサビのメロディは今までにないタイプだと思います。"
 name_en = "Primrose Shiver"
+comment4_en = "(ssg_03.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_03.txt from 東方幻想的音楽)\nちょっと昔の曲なので、今の自分風に手直ししてみました。\n曲が短くていい感じです（なにが？(^^;）\n\nこの曲のサビは出来た当時、メロディが頭から離れなくなってしまう病気に冒されて\nしまったのを覚えています。\n\n今回の準オリジナルで、西洋＋少女面を強調したよん。"
 
 [04]
 name_jp = "幻想帝都"
@@ -48,6 +54,8 @@ comment3_jp = "(創曲幻想.txt)\n都市面と聴いたので。作者は荒俣
 comment2_en = "(Music room)\nThis is the stage 2 theme.\n\nSince stage two is an urban stage, I decided to stress a near-future-style image, which is something I've never really done before. Well, at least I tried (^^;\n\nFor the first time in a while, I was able to finish the song before entering it into the computer, so I was able to finish it very quickly (lol)"
 comment2_jp = "(Music room)\n２面のテーマです。\n\n２面は都帝面ということで、いままであまりやったことのない、近未来的なイメージを重視してみました。いやするつもりでした（＾＾；\n\nこの曲、珍しくデータ化する前に全て出来あがった曲です。　おかげでスピーディに仕上がりました（笑）"
 name_en = "Illusory Imperial Capital"
+comment4_en = "(ssg_04.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_04.txt from 東方幻想的音楽)\nなかなか完成されてる曲みたいで、ぜんぜんいじれなかったです(ぉ\nこの曲は、珍しくデータ化する前にメロディが出来上がっていたタイプで、\nデータにするのはあっという間だったことを覚えています。\n\nメロディは会社にいるときに全て頭の中で・・・\n（仕事しろよ（笑））"
 
 [05]
 name_jp = "ディザストラスジェミニ"
@@ -56,38 +64,48 @@ comment3_jp = "(創曲幻想.txt)\nDisastrous Gemini : 災悪の双子\nスト�
 comment2_en = "(Music room)\nThis is the theme for the second stage bosses, Mei and Mai.\n\nAnyway, I figured it would be nice to have this turn out with a really kid-like feel to it as I wrote it.\n\nIt didn't really turn out the way I thought it would, but I think the result is still all right.\n\nIt's a song that I got to make as little-girl-ish as I wanted, but maybe all my songs have been like that (lol)"
 comment2_jp = "(Music room)\n２面ボス、めい＆まいのデーまです。\n\nとにかく、子供っぽさが出ればいいなぁ的感覚で書きました。\n\n制作前のイメージとかけ離れた曲になったけど、結果オーライですね。\n\n思う存分少女っぽい曲ですが、結局今までの曲もみんなそうだったかも（笑）"
 name_en = "Disastrous Gemini"
+comment4_en = "(ssg_05.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_05.txt from 東方幻想的音楽)\nじつは、大のお気に入り。\n今回はボス面を強調して、かっこよく、かつ軽快に仕上げてみました。\n\nこの曲も短いね～(^^;;\nでも手は抜いてないなりよ。いやほんと。\n\nで、いつも思う。こういう曲のジャンルって？\n私はジャズのつもりだったりするのだが（笑）"
 
 [06]
 name_jp = "華の幻想　紅夢の宙"
-comment3_en = "(創曲幻想.txt)\nOriginally, this was going to be a space stage, hence the name. By the way, the 宙 character is read \"sora\" (like sky) here. 'cos I really it to have an Eastern feel."
+comment3_en = "(創曲幻想.txt)\nOriginally, this was going to be a space stage, hence the name. By the way, the \"宙\" character is read \"sora\" (like sky) here. 'Cos I really want it to have an Eastern feel."
 comment3_jp = "(創曲幻想.txt)\n当初の予定で、３面は宇宙面だったので、そんな名前。ちなみ「宙」は「そら」と読みます。やや、東洋気味にいきたかったので。"
 comment2_en = "(Music room)\nThis is the third stage theme.\n\nPersonally, this feels like something I don't usually write.\nI thought it would be nice if it had a kind of endless atmosphere while I was writing it, but ...\n\nAnd it's unusual for me to write an unusual pop theme, so this is a very unusual song.\nI think it's nice for games to have a particular accent to them ...\n\nBut, is this really pop? (lol)"
 comment2_jp = "(Music room)\n３面テーマです。\n\nなんていうか、自分的に珍しい曲かも。\nはてしない雰囲気でも出ればいいかね、とか考えて創ったのですが。\n\n珍しくポップな雰囲気が珍しくて、珍しいです。\nゲームとしてはアクセントとなっていいかと思ってますが。\n\nでも、ポップか？（笑）"
 name_en = "Illusion of Flowers, Air of Scarlet Dream"
+comment4_en = "(ssg_06.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_06.txt from 東方幻想的音楽)\n砂漠風？\n正確に言うと結果として砂漠風(^^;\n\n結構珍しいような気もするし、結構ポップであると信じたい（ぉ\n悲しい感じを受けないところが斬新。なのか？（笑）"
 
 [07]
 name_jp = "天空アーミー"
-comment3_en = "(創曲幻想.txt)\nThe character's a military man, but I don't have much experience with military things so I had problems coming up with a title.\nWell, he's from the Air Force, and you fight him in the sky, so \"Heavenly Army\" seemed to work ..."
+comment3_en = "(創曲幻想.txt)\nThe character's a military man, but I don't have much experience with military things so I had problems coming up with a title.\nWell, he's from the Air Force, and you fight him in the sky, so \"Firmament Army\" seemed to work..."
 comment3_jp = "(創曲幻想.txt)\n軍人言われても、ミリタリのイメージに貧困な私はいい曲名が思いつかなかったです。\n結局、空軍よりさらに上空で闘う軍隊「天空アーミー」ということで・・・"
 comment2_en = "(Music room)\nThis is the theme for the stage 3 boss, Gates.\n\nWell, he's a male character, so I was lost on how to create an appropriate theme (^^;\nAnd he's military. I don't have much experience with military things, so it was all too mysterious.\n\nSo, of course, I just went about business as usual (^^;\nI really did want to give it my all ...\n\nEven though I say it's magical-girl-ish, it seems to be popular *sweatdrop*"
 comment2_jp = "(Music room)\n３面ボス、ゲイツのテーマです。\n\n男キャラって事で、今まで創った事のないテーマでちょっと戸惑いましたが（＾＾；\nしかも軍人。ミリタリのイメージに非常に乏しい私としても謎が多すぎる。\n\nで、結局、いつも通りでいきました（＾＾；\n精一杯頑張ったつもりなんですけどね～\n\n魔法チックな少女の曲っていっても通用しそう（汗）"
-name_en = "Heavenly Army"
+name_en = "Firmament Army"
+comment4_en = "(ssg_07.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_07.txt from 東方幻想的音楽)\nちょっと、珍しい曲（でもない？(^^;）\n曲のテンポは異常に速いのですが(BMP==170)、そんなに速く感じないところがミソ。\n\n\nで、展開が速くてボス戦にぴったり。\n別に狙ってるわけではないのですが(^^;;"
 
 [08]
 name_jp = "スプートニク幻夜"
 comment3_en = "(創曲幻想.txt)\nThis time it really is a space stage, so Sputnik.\nThe sorrowful satellite from the former Soviet Union. Not like an antique like that will show up in the game (lol) Not even Laika."
 comment3_jp = "(創曲幻想.txt)\nこんどこそ、宇宙面ということで、スプートニク（Sputnik) 。\n旧ソ連の哀しき人工衛星。ゲーム中はそんなアンティークな人工衛星も出てこないけどね（笑）ライカ犬も。"
-comment2_en = "(Music room)\nThis is the stage 4 theme.\n\nSpace, now I'm megas lost (lol)\nThe dissonance right from the start makes it space music (no way!)\n\nIt really feels like super old game music, I think ...\n\nThis also feels kind of like pop music, and even though I always wrote dark songs like this for Touhou it has kind of a mysterious feel to it.\n(Huh? Isn't this kind of upbeat, too? *sweatdrop*)"
+comment2_en = "(Music room)\nThis is the stage 4 theme.\n\nSpace, now I'm mega lost (lol)\nThe dissonance right from the start makes it space music (no way!)\n\nIt really feels like super old game music, I think...\n\nThis also feels kind of like pop music, and even though I always wrote dark songs like this for Touhou, it has kind of a mysterious feel to it.\n(Huh? Isn't this kind of upbeat, too? *sweatdrop*)"
 comment2_jp = "(Music room)\n４面テーマです。\n\n宇宙、やや戸惑い（笑）\n出だしから不協和音のあたりが宇宙（違）\n\nやや古めのゲームミュージックの感じがでるようにしてるのですが．．．\n\nこれもポップな感じがして、東方の時あんなに暗い曲ばかりたったのに不思議な感じがします。\n（え？これも明るくない？（汗））"
 name_en = "Illusionary Sputnik Night"
+comment4_en = "(ssg_08.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_08.txt from 東方幻想的音楽)\n結構、お気に入りだったりする。特に間奏（ゲーム中はそこまで流れません（笑））\n哀愁漂う不思議な人工衛星。\n\n自分にしては珍しく、結構頻繁に不協和音を使っています。それだけ練りに練って\n創ったといえる（嘘）\n\nとにかく、西洋少女のイメージをどうしても入れたかったので、メインメロディは\n私流少女風（謎(^^;;）\n今思うと、不思議なイントロで、なんでこんなイントロが生まれたのか思い出せない(^^;"
 
 [09]
 name_jp = "機械サーカス　～ Reverie"
-comment3_en = "(創曲幻想.txt)\nThe boss is huge, so I wanted a mechanical feeling title, so I very straight-forwardly used the word mechanical.\nSo, what about Circus? Originally, I thought maybe I'd name the last boss theme Murderous Circus, but it seemed over the top *sweatdrop* So, the Circus ended up here.\nThis name quite splendidly disregards the game's atmosphere (lol)"
+comment3_en = "(創曲幻想.txt)\nThe boss is huge, so I wanted a mechanical feeling title, so I very straight-forwardly used the word mechanical.\nSo, what about Circus? Originally, I thought maybe I'd name the last boss theme \"Murderous Circus\", but it seemed over the top *sweatdrop* So, the Circus ended up here.\nThis name quite splendidly disregards the game's atmosphere (lol)"
 comment3_jp = "(創曲幻想.txt)\n大型ボスということで、機械チックなタイトルにしようと、ものすごくストレートに機械とつけました。\nサーカスは、最初からラスボスのテーマ曲名は殺人サーカスにしよう、と考えていたのですが、やばめだったので（汗）ここで使いました。\n見事にゲームの雰囲気を無視した曲名（笑）"
-comment2_en = "(Music room)\nThis is the theme for the stage 4 boss, Marie.\n\n\"Here it comes!\" ... is how this song feels to me.\nThe melody and atmosphere are just like the songs I wrote for Touhou.\n\nAnyway, it's not too fast, and it's pretty cool, so I'm quite satisfied with this song.\n\nEven so, the melody is pretty simple and easy to remember. Maybe it'll get stuck in your head during the boss fight."
+comment2_en = "(Music room)\nThis is the theme for the stage 4 boss, Marie.\n\n\"Here it comes!\" is how this song feels to me.\nThe melody and atmosphere are just like the songs I wrote for Touhou.\n\nAnyway, it's not too fast, and it's pretty cool, so I'm quite satisfied with this song.\n\nEven so, the melody is pretty simple and easy to remember. Maybe it'll get stuck in your head during the boss fight."
 comment2_jp = "(Music room)\n４面ボス、マリーのテーマです。\n\nでたな～、とか思う方がいそうな感じ。\n東方の頃からなんも変わらない雰囲気の曲調です。\n\nとにかく、突っ走り過ぎなく、格好いい曲になって満足であります。\n\nそれにしても、単純で覚えやすいメロディですね。ボス戦中に頭に残ってしまうかも"
 name_en = "Mechanical Circus ~ Reverie"
+comment4_en = "(ssg_09.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_09.txt from 東方幻想的音楽)\nこのサビのメロディは結構いけてると思ってるのですが(^^;\nまはぁ、めちゃくちゃ単純明快だけどね。\n\nさて、ちょっと微妙なノリのこの曲ですが、これは、ボスが大型だったから\nがんばって大型っぽさを出そうとした結果なんですね。\n私の曲は少女以外に向かないのに（^^;;;"
 
 [10]
 name_jp = "カナベラルの夢幻少女"
@@ -96,6 +114,8 @@ comment3_jp = "(創曲幻想.txt)\nやっぱ、宇宙。宇宙に最も近い人
 comment2_en = "(Music room)\nThis is the stage 5 theme.\n\nI finished this before the level data was done, so from here on it's all just awesome battles (lol)\n\nIn any case, since it's a maid game, it's Western, it's Western, it's gotta be Western style.\n\nI don't think you even get to hear once through a loop in the game, but the chorus isn't that Western, anyway (^^;"
 comment2_jp = "(Music room)\n５面テーマです。\n\n面データが出来る前に先行して創ったのでもう、ここから好き勝負やりまくったりしてます（笑）\n\nとりあえず、メイドさんなんだから西洋風に西洋風に、やっぱり西洋風に。\n\nゲーム中はループまで聞けないと思うけどサビ後半はあんま西洋風でもないです（^^;"
 name_en = "Illusionary Girl from Canaveral"
+comment4_en = "(ssg_10.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_10.txt from 東方幻想的音楽)\n不思議な曲。\nゲーム終盤をかなり意識しています。これが、（自分流の）終盤だって感じ(^^;\n\n当時、この曲の裏テーマは「少女人形」で作り出しました。ゲームの企画を無視して（ぉ\n結果、微妙に違うような気もする。（かなり）\n\n\n次回作こそ、ひとつは裏テーマで「人形」曲を入れたる（笑）"
 
 [11]
 name_jp = "魔法少女十字軍"
@@ -104,6 +124,10 @@ comment3_jp = "(創曲幻想.txt)\nようやくゲームならではのライト
 comment2_en = "(Music room)\nThis is the theme for the stage 5 boss, Erich.\n\nMan! This song is just full of awesome.\nOf course, it's fantas-tic awesome.\n\nAt this point, there's really no difference between this and Touhou music (lol)\n\nTouhou was pretty much full of songs like this (^^;"
 comment2_jp = "(Music room)\n５面ボス、エーリッヒのテーマです。\n\nもう！格好良さのみ重現しました。\nもちろん、ファンタジックに格好良く。\n\nここらまで来ると、東方の曲と差別化がほとんど出来ていない（笑）\n\nこんな曲ばっかで東方ってなんだったんでしょう（^^;"
 name_en = "Magical Girl's Crusade"
+comment5_en = "(Comments for \"魔法少女十字軍　～ Little Little Crusader\" on 東方幻想的音楽)\n"
+comment5_jp = "(Comments for \"魔法少女十字軍　～ Little Little Crusader\" on 東方幻想的音楽)\n ダウンロード zun_mgcr.mp3 (4.03M) \n\nで、聴いてのとおり、こんな馬鹿みたいに激しくて暗い曲も無いだろう、と言う曲です。\n\n少年少女十字軍の勇ましさと、大人を信じて騙された無念の塊なのです\n\n\nそろそろ、ゲーム用曲ばっかじゃなくて、ＨＰで公開できるような曲が創りたくて創りました。\n\n今回は、Midi 版にする気力が無いので、生データそのままで\n\n久しぶりに好きな様に曲を創ってみたんですが、最近、人目を恐れて適当に創れない事が多く、\n\nこれでは、セオリーばかりの無難な曲しか創れなくなると危機感を感じたので、思い切って感覚だけで弾いてみました。\n\n結果として、物凄く稚拙なところもありますが、私的には楽しく作曲でき満足です(^^;\n\n（人様に聞かせるようなものではないかも）\n\n絵の場合、ちょっとしたもので落書きってものがありますよね。曲の場合は、なんていえば良いんでしょうか？\n\n私が、ＵＰしてるものはまさに、それなんですよね(^^;（３～４時間作品だし）\n\nいずれ、落曲(落書きのような曲）だけじゃなくて、ちゃんとしたの創るべきですね(^^;"
+comment4_en = "(ssg_11.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_11.txt from 東方幻想的音楽)\nこれこそが、私の神聖ミュージックです。\n私の心の教会では、いつもこんな曲が流れています(^^;;\nいいなぁ、ファルコム（笑）\n\nこれは、ほんと私の曲っぽいですね。いやほんと。東方の頃の感じ丸出しで（笑）\nコードとドラムで私の曲だとバレバレ、とも言われる。\n\n\n\nてゆーか、ファンタジー？\nいえいえ、ふぁんたすていかですよ。"
 
 [12]
 name_jp = "アンティークテラー"
@@ -112,30 +136,38 @@ comment3_jp = "(創曲幻想.txt)\nAntique Terror ： 懐かしい感情（恐�
 comment2_en = "(Music room)\nThe stage 6 theme.\n\nAll my other last stage songs before now have been slow tempo songs, but this time I made something that's more medium.\n\nThe theme is a fighting maid.\n\n... wait, then what about the other songs? (^^;"
 comment2_jp = "(Music room)\n６面テーマです。\n\nいままで最終面テーマはスローテンポの物ばっかりだったけど、今回はミディアムな物にしました。\n\nテーマは闘うメイド。\n\nって、じゃ、他の曲はなんなの？（^^;"
 name_en = "Antique Terror"
+comment4_en = "(ssg_12.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_12.txt from 東方幻想的音楽)\nじつは、ループまでが長い。心の中では、すんごく短く創るつもりだったんだけど\n収集つかなくなって異様に長くなってしまった。\nこの曲にあわせてステージ作ってもらって、すまん(^^;\n\nでも、結構特殊な曲だけどかっこいいところもあるかなぁ。\n人形をテーマにテクノっぽく仕上げたつもり。と思いたい。まぁ。\nイントロ後の一つ目のメロディは自信作。って半端な自信（ぉ\n\nうむ、そういえば、なかなかこういうメロディも思いつかないな～\nこれを創ったときの心情が知りたいなり。"
 
 [13]
 name_jp = "夢機械　～ Innocent Power"
 comment3_en = "(創曲幻想.txt)\nInnocent Power: true innocence\nIn any case, I really like how the character for dream looks ... (lol)"
 comment3_jp = "(創曲幻想.txt)\nInnocent Power ： 本当の無垢\nとりあえず、夢って漢字の形が大好きなので・・・（笑）"
-comment2_en = "(Music room)\nThis is the first theme for the last boss, VIVIT.\n\nI tried making it without any feeling of finality or being the last.\n\nIt feels like the intro for the last boss.\n\nIt's amazingly unlike shooting game music (lol)\n\nThe main theme from this song was originally something I produced for the title screen, but I'm using it here.\nAfter all, it feels a lot like a demo song. (oh"
+comment2_en = "(Music room)\nThis is the first theme for the last boss, Vivit.\n\nI tried making it without any feeling of finality or being the last.\n\nIt feels like the intro for the last boss.\n\nIt's amazingly unlike shooting game music (lol)\n\nThe main theme from this song was originally something I produced for the title screen, but I'm using it here.\nAfter all, it feels a lot like a demo song. (oh"
 comment2_jp = "(Music room)\n最終ボス、ビビットのテーマ１です。\n\n終盤っぽく、ラストっぽくなくをテーマにつくりました。\n\nラスボスイントロって感じですよね。\n\n微妙にＳＴＧっぽくない（笑）\n\nこの曲のサビはタイトル画面用に作成したメロディだったんですが、ここで使用。\nだから、妙にデモっぽい曲なんですね（ぉ"
 name_en = "Dream Machine ~ Innocent Power"
+comment4_en = "(ssg_13.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_13.txt from 東方幻想的音楽)\nようやく、ラスボス三部作のＵＰです。\n\nで、この曲は短いわ～(^^;\n実際、ゲーム中もかなり短いのでちょうどいいくらいですが、この曲はタイトルデモが\nあった場合用に創った曲を、ボス風にアレンジしたものです。\n\n三曲の流れとして一曲目は派手に、二曲目は流れるように、そして最後は切なくを考えて\n創ったので、結果ミニオーケストラ -> テクノ -> ニューエイジとなりました。\n\n\n今回、あまりに短いので最後にサービスピアノを付け加えてあります。\nでも短い。やっぱりピアノ好き。\n\nよく聴けば、ビジュアルっぽいメロディ（本当か？）\nもっとよく聴けば、和風っぽい（嘘）"
 
 [14]
 name_jp = "幻想科学　～ Doll's Phantom"
 comment3_en = "(創曲幻想.txt)\nDoll's Phantom: an android's soul\nHm, my English translations are really suspicious (lol) but the meanings shouldn't be too far off.\nEven science can be surrounded by illusions ...(ooh"
 comment3_jp = "(創曲幻想.txt)\nDoll's Phantom ： アンドロイドの心\nというか、さっきから英語訳が怪しいけど（笑）、意味は間違っていないはず。\n科学にも幻想を抱いてしまう・・・（ぉ"
-comment2_en = "(Music room)\nThis is the final boss, VIVIT's, second theme.\n\nI made it to be fantasy techno (woah!)\nSince it's effectively an intermediate piece, I took care not to make it too assertive.\nI don't make this kind of song that often, so it's really become a favorite of mine.\n\nTo tell the truth, I wanted to make this mostly a percussive song, but I haven't listened to a lot of songs like that, so it didn't come out as well as I wanted, and I eventually added a melody."
+comment2_en = "(Music room)\nThis is the final boss, Vivit's second theme.\n\nI made it to be fantasy techno (woah!)\nSince it's effectively an intermediate piece, I took care not to make it too assertive.\nI don't make this kind of song that often, so it's really become a favorite of mine.\n\nTo tell the truth, I wanted to make this mostly a percussive song, but I haven't listened to a lot of songs like that, so it didn't come out as well as I wanted, and I eventually added a melody."
 comment2_jp = "(Music room)\n最終ボス、ビビットのテーマ２です。\n\n幻想テクノ調に仕上げました（謎）\nいわゆる中継ぎの曲なので、自己主張が出ないように気を付けました。\nこの曲は、自分的に結構珍しいタイプの曲でややお気に入りであります。\n\n実はこの曲、ドラムメインに仕上げるつもりだったんですが、そういう曲あんま聴かないせいか、大変な曲になったので、いろいろメロディを付けました。"
 name_en = "Illusory Science ~ Doll's Phantom"
+comment4_en = "(ssg_14.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_14.txt from 東方幻想的音楽)\nこの曲が一番、幻想バトルっぽいね（のか？）\n\nテクノ調に仕上げてあるので、これ以上手を加えることが出来ませんでした。\nええ、いいわけではありません(^^;\n\nそれにしても、テクノ好きに言わせると、「こんなんテクノじゃない」って言われそう。\nじゃあ、なに？　って聴いてみたい。\n「ハードクラシック」（幻聴）"
 
 [15]
 name_jp = "少女神性　～ Pandora's Box"
 comment3_en = "(創曲幻想.txt)\nPandora's Box: hope\nAnyway, didn't really know what the boss would be like, so I just did my best to make it feel godly, but it has a pop sensibility to it.\n\"Shoujo shinsei\" ... I don't really get it either. (lol)"
 comment3_jp = "(創曲幻想.txt)\nPandora's Box ： 希望\nとりあえず、どんなボスか分からなかったの、出来るだけ神々しく、でもポップにという感じで。\nしょうじょしんせい。よくわからんタイトル（笑）"
-comment2_en = "(Music room)\nThe final boss, VIVIT's, third theme.\n\nThis is definitely a song that's bursting through with an air of finality, isn't it?\n\nWestern-style music is fun~ is how this song managed to turn out.\n\nIt would have been nice if I could have gotten all the songs to be a little more like that. (Hey, now.)"
+comment2_en = "(Music room)\nThe final boss, Vivit's third theme.\n\nThis is definitely a song that's bursting through with an air of finality, isn't it?\n\nWestern-style music is fun~ is how this song managed to turn out.\n\nIt would have been nice if I could have gotten all the songs to be a little more like that. (Hey, now.)"
 comment2_jp = "(Music room)\n最終ボス、ビビットのテーマ３です。\n\nこれはラストらしさを全面に押しだそうとした曲ですね。\n\n西洋風って楽しいな～。とか、感じてしまう様に創りました（微謎）\n\n全部の曲、こんな感じで創りたかったですね。（おいおい）"
 name_en = "Girl's Divinity ~ Pandora's Box"
+comment4_en = "(ssg_15.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_15.txt from 東方幻想的音楽)\n当初の予定通り（大嘘）ハードロック風に仕上げました。\n\nラスボス３曲は特殊な作り方で創られています。それは、土曜に３曲全てメロディを作製し、\n日曜に３曲順番にデータ化したということ。そもそも、曲が出来上がってからデータ化する\n自体珍しいことなので、三倍珍しいです（^^;\n最後にメロディを創ったのがこの曲で、その後に【 夢機械 】をデータ化したので１曲目も\n引っ張られて神聖ぽくなっちゃったかも。\n\n大体、今までのボス曲（特にラスボス）はハードな曲調だが、希望的な部分が欠けた曲ばっか\nだった気がするので、今回アニメチックな希望を感じさせるように仕上げたつもりであります。\n\n個人的には、いままでに創ったことのないようなボス曲となって、よかったなと思っています。\n\n３曲中、一番苦労したね。この曲。メロディは真っ先に浮かんだけど。今回、\n\n\n\n私のテーマは、ポップでもロックでもではなく、あくまでニューエイジっぽく、なのだが？"
 
 [16]
 name_jp = "シルクロードアリス"
@@ -144,30 +176,38 @@ comment3_jp = "(創曲幻想.txt)\nSilkroad Alice ： 西からやってきた�
 comment2_en = "(Music room)\nThe extra stage theme.\n\nI tried making a Touhou-esque song for once.\nIt's Japanese style and new-agey, and uses Japanese instruments.\n\nJapanese instruments and piano go together very well. Like maybe hichiriki and piano (like Hideki Togi) ...\n\nAnyway, I'm sure various instruments must have travelled the silk road, bringing with them various fantasies.\nOur maid heroine must also travel the silk roa- (abridged)"
 comment2_jp = "(Music room)\nエキストラステージのテーマです。\n\nうって変わって東方な曲を目指しました。\n和風ニューエイジチックに、和風な楽器も使っています。\n\n和製楽器とピアノって異常にマッチしますよね。篳篥とピアノ（東儀秀樹）とか．．．\n\nとにかく、楽器もシルクロードを通って来たのかと思うと色々と幻想してしまう。\nメイドさんもシルクロードを通っ（略）"
 name_en = "Silk Road Alice"
+comment4_en = "(ssg_16.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_16.txt from 東方幻想的音楽)\n今回、初めて音源依存しそうなとこまで実験的にいじってみました。\n88Pro以外だとうまく再生されない場合もあるかもしれませんが、ご了承くださいませ。\n\nニューエイジ好きな私なのですが、この曲が初めてニューエイジ風な曲といえるんじゃ\nないでしょうか。\nこの曲は、ステージ構成からわかるように東風な曲です。しかし、タイトルからわかる\nように、神社（巫女さん）のイメージではなく、もうちょっと西よりなイメージで創ら\nれています。\n\n\nそれにしても、こんな曲でＳＴＧをするなんて(^^;;"
 
 [17]
 name_jp = "魔女達の舞踏会　～ Magus"
 comment3_en = "(創曲幻想.txt)\nMagus: an eastern-style magician\nShe's a witch, so she needs a song like this.\nAnd since the song perfectly fit my image of what a ball should be like ..."
 comment3_jp = "(創曲幻想.txt)\nMagus : 東方魔術師\n魔法使いってことで、こんな感じ。\n出来上がった感じが舞踏会ってイメージにぴったりだったので・・・"
-comment2_en = "(Music room)\nExtra boss #1, Marisa Kirisame's theme.\n\nThe theme is witches. ... you can't really use \"witch girl\" with her. (lol) \nIt really feels like a bad guy's theme.\n\nWell, it's a boss theme, so I guess it is (^^;\n\nI wanted it to come through with a feel of intelligence rather than cuteness, but is that how it turned out?"
+comment2_en = "(Music room)\nExtra boss #1, Marisa Kirisame's theme.\n\nThe theme is witches. ...You can't really use \"witch girl\" with her. (lol)\nIt really feels like a bad guy's theme.\n\nWell, it's a boss theme, so I guess it is (^^;\n\nI wanted it to come through with a feel of intelligence rather than cuteness, but is that how it turned out?"
 comment2_jp = "(Music room)\nエキストラボス１、霧雨魔理沙のテーマ\n\nテーマは魔女。っ娘が付かない奴（笑）\n異様に悪役な感じの曲です。\n\nつーか、ボスなんだから悪役ですが（^^;\n\nかわいさより知性を感じさせるように創りたかったのですが、感じでもらえたでしょうか？"
 name_en = "The Witches' Ball ~ Magus"
+comment4_en = "(ssg_17.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_17.txt from 東方幻想的音楽)\nこの曲、今までの曲調と大きく異なり、ミニオーケストラの雰囲気を出してみました。\n非常に狭いホールもしくはクラブハウス位の狭い場所でのオーケストラと言うものを\n目指してあります。\n\n魔理沙のテーマはすでに４曲目に当たるわけですが、今回初めて悪役っぽい曲になりま\nした。まぁ、悪役だしね(^^;\nさらに、魔法使いから魔女、だしね(^^;\n\n反省点は、ものすごくＳＴＧっぽくない曲ということ。（ノリわるー）\n雰囲気重視だったしねー。\nとりあえず、曲だけ見れば格好いいじゃないですか(^^;;\n\n\nそれにしても短い曲だな～(^^;"
 
 [18]
 name_jp = "二色蓮花蝶　～ Ancients"
-comment3_en = "(創曲幻想.txt)\nAncients: old-fashioned people\nBy the way, \"二色\" (dichromatic) is pronounced \"ni'iru\". All together, \"Ni'iru Renkachou\".\nI wanted it to feel Japanese, like a hand of hanafuda. Then, I wanted to make sure it had the \"lotus\" keyword in it somehow."
+comment3_en = "(創曲幻想.txt)\nAncients: old-fashioned people\nBy the way, \"二色\" (dichromatic) is pronounced \"niiru\". All together, \"Niiru Renkachou\".\nI wanted it to feel Japanese, like a hand of hanafuda. Then, I wanted to make sure it had the \"lotus\" keyword in it somehow."
 comment3_jp = "(創曲幻想.txt)\nAncients : 古風人\nちなみに、「二色」と書いて「ニイル」と読みます。「ニイルレンカチョウ」です。\nぱっとみ、花札の役みたいで和風っぽくしたかったから。あと、蓮というキーワードをどっかに入れたかったし。"
-comment2_en = "(Music room)\nExtra boss 2, Reimu Hakurei's theme.\n\nA shrine maiden who boasts the ultimate in attack power.\nThe theme is shrine maidens. ... well, not at all, really. (^^;\n\nSince it's the end~, it feels like it's got a sense of speed and a sense of something else~ (lol)\n\nIt's too bad I couldn't come up with a song that gave our shrine maiden a feel of intelligence. Anyway, take care to dodge all the bullets ..."
+comment2_en = "(Music room)\nExtra boss 2, Reimu Hakurei's theme.\n\nA shrine maiden who boasts the ultimate in attack power.\nThe theme is shrine maidens. ...Well, not at all, really. (^^;\n\nSince it's the end~, it feels like it's got a sense of speed and a sense of something else~ (lol)\n\nIt's too bad I couldn't come up with a song that gave our shrine maiden a feel of intelligence. Anyway, take care to dodge all the bullets..."
 comment2_jp = "(Music room)\nエキストラボス２、博麗霊夢のテーマ\n\n最凶最悪の攻撃力を誇る巫女さんです。\nテーマは巫女。ってどう聴いても違う(^^;\n\nも～最後だから、スピード感ありーのなんでもあり？って感じ～（笑）\n\n巫女さんにしては知性が感じれない曲なのは残念。でも、とりあえず格好良く弾が避けれる様に..."
 name_en = "Dichromatic Lotus Butterfly ~ Ancients"
+comment4_en = "(ssg_18.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_18.txt from 東方幻想的音楽)\n魔理沙とうって変わってゲームゲームした曲です（そーかなー？(^^;）\nでも、この曲が一番、東方某時代に近いと言えば近いような気もする。\n激しいドラム＋高速ピアノ弾きならしパートと、激しさ控えめなパートの交互で構成されてる曲\nですが、それが妙な少女らしさを感じてしまう。\n\nいつもはコード重視で曲を組み立てる私ですが、この曲の一番苦労してるのは、実はドラム。\n他の曲に比べて１／２位のスピードのドラムなんですが、ピアノ弾き殴りで高速感が出てる\n為、全体としては、かなりスピード感ある曲に仕上がったみたい。\n\n\nエキストラ曲作成開始時に真っ先に、霊夢は巫女さんっぽくない曲しかあり得ない\nと思っていたのですが、よくよく考えれば、それはこういう曲が巫女さんらしいと\n私が思っているにすぎないんですね(^^;\n巫女さんとは思えない曲にみえて、実は巫女さんらしいのです。\nって言い切ってもなんだが...(^^;"
 
 [19]
 name_jp = "ハーセルヴス"
-comment3_en = "(創曲幻想.txt)\nHerselves: the girls themselves (coined word)\nBy the way, there is no such word (lol), but since there's two VIVITs ..."
+comment3_en = "(創曲幻想.txt)\nHerselves: the girls themselves (coined word)\nBy the way, there's no such word (lol), but since there's two VIVITs..."
 comment3_jp = "(創曲幻想.txt)\nHerselves : 彼女自分自身達 ( 造語 ）\nちなみにこんな単語ありませんが（笑）、二人のビビットということで・・・"
-comment2_en = "(Music room)\nThe ending theme.\n\nSadness ~ hope ~ courage ~ and then, again, sadness ...\n... is how it came out, but it was a lot of work.\n\nThere's so much going on with so many styles in just a minute and a half that it may be hard to keep track of.\nThe intro is like something from an eroge (wrong!)\nThe main melody helps lift up your spirits (somehow)\nThe main melody is like the cavalry coming in (wrong again)\nAnd the end is based on the ticking of a clock (really)\nI worked so much on it, but it's so short~ (^^;"
+comment2_en = "(Music room)\nThe ending theme.\n\nSadness, hope, courage, and then, again, sadness...\n...Is how it came out, but it was a lot of work.\n\nThere's so much going on with so many styles in just a minute and a half that it may be hard to keep track of.\nThe intro is like something from an eroge (wrong!)\nThe main melody helps lift up your spirits (somehow)\nThe main melody is like the cavalry coming in (wrong again)\nAnd the end is based on the ticking of a clock (really)\nI worked so much on it, but it's so short~ (^^;"
 comment2_jp = "(Music room)\nエンディングのテーマ。\n\n哀しげ～希望～勇敢～再び哀しげ．．．\nという曲に仕上げるのに苦労しました。\n\n一分半程の間に目まぐるしく曲調が変化するので、聴く方も大変かも。\nイントロは、エロゲーライクに（違）\nメインメロディは元気が出るように（謎）\nサビは騎丘隊ライクに（それも違う）\n最後は、時計仕掛けをテーマに（本当）\n苦労したけど短い曲だな～(^^;"
 name_en = "Herselves"
+comment4_en = "(ssg_19.txt from 東方幻想的音楽)\n"
+comment4_jp = "(ssg_19.txt from 東方幻想的音楽)\nこの曲は、う～ん。色々試行錯誤した後が見える～(^^;\nまぁ、後の力になると思って、う～ん。\n\nピアノアドリブ部分のピアノはジャズを意識してみました。\nしっとりって感じじゃないけど、おしゃれな感じにしたくて(^^;\n\nいままでの私の曲の中でも、かなり特殊な曲。とおもいきや、暗さはいつもと\nいっしょなんだよね(^^;;;;"
 
 [20]
 name_jp = "タイトルドメイド"

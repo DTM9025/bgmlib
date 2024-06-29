@@ -1,0 +1,62 @@
+﻿# Music Room Interface Info
+
+[game]
+name = "七夕坂夢幻能　〜 Taboo Japan Disentanglement"
+name_en = "Mugen Noh of Tanabata Hill ~ Taboo Japan Disentanglement"
+circle = "上海アリス幻樂団"
+circle_en = "Team Shanghai Alice"
+artist = "ZUN"
+year = 2024
+gamenum = "10"
+
+packmethod = 0
+
+tracks = 11
+
+[update]
+wikipage = "Taboo_Japan_Disentanglement/Story"
+wikirev = 483326
+
+[01]
+name_jp = "七夕坂に朝が来る"
+name_en = "Dawn Breaks on Tanabatazaka "
+
+[02]
+name_jp = "不等式のティンカーベル"
+name_en = "Tinkerbell of Inequality"
+
+[03]
+name_jp = "禁断の扉の向こうは、この世かあの世か"
+name_en = "Does the Forbidden Door Lead to This World, or the World Beyond?"
+
+[04]
+name_jp = "スモーキングドラゴン"
+name_en = "Smoking Dragon"
+
+[05]
+name_jp = "夢幻能　～ Taboo Marionette"
+name_en = "Mugen Noh ~ Taboo Marionette"
+
+[06]
+name_jp = "クレイジーバックダンサーズ"
+name_en = "Crazy Backup Dancers"
+
+[07]
+name_jp = "憑坐は夢と現の間に　～ Necro-Fantasia"
+name_en = "Yorimashi Between Dreams and Reality ~ Necro-Fantasia"
+
+[08]
+name_jp = "ひとりぼっちの常陸行路"
+name_en = "The Lonely Road of Hitachi"
+
+[09]
+name_jp = "地蔵だけが知る哀嘆"
+name_en = "The Lamentations Known Only by Jizo"
+
+[10]
+name_jp = "秘匿されたフォーシーズンズ"
+name_en = "The Concealed Four Seasons"
+
+[11]
+name_jp = "夜じゃなくてもお化けはいるから"
+name_en = "Ghosts Exist Even When It's Not Night"

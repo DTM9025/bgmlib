@@ -15,13 +15,13 @@ tracks = 24
 
 [update]
 wikipage = "Phantasmagoria_of_Dim.Dream/Music"
-wikirev = 182489
+wikirev = 370466
 
 [01]
 name_jp = "夢は時空を越えて"
 comment_en = "This is the title music. Suddenly it doesn't seem too Touhou-like, right?\nEven if I do say so myself, for someone who's made music with such an unsuitable atmosphere I don't look too worried, I've been thinking lately.\nBut lately, maybe it's because I've become accustomed to such an atmosphere, or maybe I actually am in this kind of atmosphere. I feel my game has to be like this or it's no good.\nIn any case, right from the beginning I'm already talking about music like this. Oh no!"
 comment_jp = "タイトルの曲です。いきなり東方な感じがしませんね。\n我ながら、よくここまでゲームの雰囲気に合わない曲を作って平気な顔してられるなぁ、なんて最近思ってます。\nけど、最近はこの雰囲気に馴れたせいかそれとも、実はこの雰囲気で合ってるのか私のゲームはこういう曲じゃなきゃ駄目な気がしてきました。\nそんなわけで、最初からこういった曲で始まってます。いやはや。"
-name_en = "A Dream Transcending Space-time"
+name_en = "A Dream Transcending Space-Time"
 
 [02]
 name_jp = "Selection"
@@ -33,7 +33,7 @@ name_en = "Selection"
 name_jp = "東方妖恋談"
 comment_en = "The game's main character also happens to be a shrine maiden, but...\nIs this really a shrine maiden's song? Well, uh. That's. You see.\nBut, I do like it. And it does have a rather oriental feel to it, and the melody is pretty nice. Right? (Begging)"
 comment_jp = "ゲームの主人公であり巫女さんでもあるわけなんだけど。\n巫女さんかぁ？ この曲。 って、まぁその。あの。\nでも、気に入ってます。それでも東方な感じのするところもあるし、メロディもいい感じだよね。ねぇ（哀願）"
-name_en = "Mystic Oriental Love Consultation"
+name_en = "Eastern Mystical Love Consultation"
 
 [04]
 name_jp = "Reincarnation"
@@ -45,10 +45,10 @@ name_en = "Reincarnation"
 name_jp = "Dim. Dream"
 comment_en = "I feel like this character's personality has changed since the last game...\nIn the last game, you know, she seemed more childish, didn't she? (And her hair was a different color *g*)\nThe song seems pretty cool somehow...\nWell, maybe \"cool\" isn't quite the right word for it. Let's see, how to say, how to say. Ummm (^^;\nOh well, I really do like a lot of the songs in this game.\nWhat do you all think? Well, let's overlook how it doesn't match the character for now (^^;"
 comment_jp = "なんか、このキャラ、前作と性格が変わったような・・・\n前作では、もっとこう、子供っぽい感じがしたんだけど？（髪の色も違うし（笑）\n曲は、妙なかっこよさがある気が・・。\n一般に言うかっこよさとはちょっと違うかもしんないけど。なんていうか、なんていうんですか。えぇ～と(^^;\nまぁその、このゲームの曲、どれも結構気に入ってます。\nみなさんはどうですか。まぁ、キャラに合わないとかは抜きにしてね(^^;"
-name_en = "Dimensional Dream"
+name_en = "Dim. Dream"
 
 [06]
-name_jp = "Tabula rasa　～空白少女"
+name_jp = "Tabula rasa　～ 空白少女"
 comment_en = "Yeees. The composer is not too good at cute songs. This song doesn't seem very cute, does it?\n(If anyone knows the comic Ellen came from... sorry, it doesn't match her very well, does it?)\nWell, anyway, this song is actually a song I wrote a loooooong time ago to practice MIDI; I rewrote it all in FM.\nIt was one of my favorite original songs, but it was completely Oriental-style, and... (I think this song is, too ...) I don't know how it ended up being a foreign girl's theme."
 comment_jp = "う～ん。作者、かわいい曲は苦手なんです。なんか、あんまりかわいい曲ではないですよね。\n（エレンの元の漫画知ってる人、いたらごめんよ。あんまりキャラに合ってなくて）\nそれはともかく、この曲、実はずうっと昔にＭＩＤＩを練習するために作った曲を、ＦＭで作り直したものなのです。\nお気に入りのオリジナル曲の一つだったんですが、元の曲は完全に東洋風だったんですが・・・（この曲もそうな気が・・） なんで、外国の少女のテーマなのかしらん。"
 name_en = "Tabula rasa ~ The Empty Girl"
@@ -60,13 +60,13 @@ comment_jp = "変なキャラです。変な曲です。はい。\nなんてい�
 name_en = "Maniacal Princess"
 
 [08]
-name_jp = "夢消失　～Lost Dream"
+name_jp = "夢消失　～ Lost Dream"
 comment_en = "She isn't human, either ...\nWhen I'm making up characters, I'll write down a bunch on paper, and just choose some. This character has a pretty loli feel about her, but...\nThe song is unusually cool.\nI said this before, but I'm not that good at making cute songs. This song turned out the same way...\nA cuter song would have been nice for this character...\n\n\n\nAahhhh, all the songs feel kind of half-assed~\n(It's cool, but it's got kind of girly instrumentation in it... ) Oh, well, it's okay.\nI guess I like this kind of song, after all."
 comment_jp = "この娘も人間じゃないのよねぇ・・・\n自分はキャラを作るときに、いつも紙にいろんなキャラを書いて、その中から選ぶんですが。このキャラかなりロリっとした感じのキャラだったんだけど・・・\n曲の方は、妙にかっこいいですよね。\nさっきも書いたけど、かわいい曲って苦手なのです。この曲もそうですよね・・・。\nこのキャラだったらもっとかわいい系でもよかったですよねぇ・・・。\n\n\n\nあああ、どの曲もなんだか中途半端～\n（かっこいいけど、少女っぽい感じ（音色が）もするし）まぁ、いいんですけど。\n自分はそれが気に入ってるみたいだし。"
 name_en = "Vanishing Dream ~ Lost Dream"
 
 [09]
-name_jp = "夢幻遊戯　～Dream War"
+name_jp = "夢幻遊戯　～ Dream War"
 comment_en = "I like this song quite a bit, I really do, but it doesn't really fit the character at all, does it (^^;\nOh well.This song's loop is pretty long, but it's pretty repetitive.\nLet's see, but, aside from the bosses, isn't it the coolest of the seven characters' themes? (Especially the main part, and even the intro)"
 comment_jp = "この曲、かなり気に入ってるんだけど、気に入ってるんですけど。めちゃくちゃ、キャラにあってないですよね(^^;\nまぁその。この曲かなりループまで長いですけど、繰り返し、多いですね。\nえ～と、でも、ボスキャラを除く７人の中では一番かっこい　いんじゃないかな？ （とくにさびとか、イントロとかも）"
 name_en = "Visionary Game ~ Dream War"
@@ -76,7 +76,7 @@ name_jp = "勝利デモ"
 name_en = "Victory Demonstration"
 
 [11]
-name_jp = "魔法決戦！～Fight it out!"
+name_jp = "魔法決戦！ ～ Fight it out!"
 comment_en = "This song doesn't play in VS mode.Who the 7th is depends on which character you picked, but this song plays no matter who that was. So, if it's someone like Ellen, then this song will be totally out of place (^^;\nI was going for a boss feel, not a last boss feel, but...\nThe main melody is almost the same as Reimu's theme.\nThe main part is pretty cool... ...right? Well... maybe it's kind of odd?"
 comment_jp = "この曲は対戦では流れません。７人目は使用キャラによって固定されてますが、どのキャラが出てきてもこの曲になります。よって、エレンとかが最後に来る場合とかだと、めちゃくちゃ合いません。（^^;\n曲は、ラストっぽくないボスっぽいのを目指したのですが・・・\nメインのメロディは東方妖恋談とほぼ同じになってます。\nさびもかっこはいいです・・・よね。まぁ、変・・・かな？"
 name_en = "Decisive Magic Battle! ~ Fight it out!"
@@ -97,7 +97,7 @@ name_en = "Sailor of Time"
 name_jp = "魔法鐘愛"
 comment_en = "This is pretty short. \nStill, I tried to give it that certain feeling.\nWell, that's about it."
 comment_jp = "これは短いです。\nただ、かっこつけてみただけです。\nまぁ、なんだ、それだけ。"
-name_en = "Love of Magical Chimes"
+name_en = "Adoration of Magic"
 
 [15]
 name_jp = "Strawberry Crisis!!"
