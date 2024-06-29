@@ -1,6 +1,6 @@
 [submodule "libs/fox"]
 	path = libs/fox
-	url = https://github.com/nmlgc/fox-toolkit
+	url = https://github.com/DTM9025/fox-toolkit
 	shallow = true
 [submodule "libs/vorbis"]
 	path = libs/vorbis
