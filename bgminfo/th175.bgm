@@ -1,0 +1,151 @@
+﻿# Music Room Interface Info
+
+[game]
+name = "東方剛欲異聞　～ 水没した沈愁地獄"
+name_en = "Touhou Gouyoku Ibun ~ Sunken Fossil World"
+circle = "黄昏フロンティア"
+circle_en = "Twilight Frontier"
+year = 2021
+gamenum = "17.5"
+
+packmethod = 0
+
+tracks = 26
+
+[composer]
+cmp1 = "ziki_7"
+cmp2 = "ZUN"
+
+[update]
+wikipage = "Sunken_Fossil_World/Music"
+wikirev = 0
+
+[01]
+name_jp = "水没した沈愁地獄"
+composer = 1
+name_en = "Submerged Hell of Sunken Sorrow"
+
+[02]
+name_jp = "東方剛欲異聞"
+composer = 1
+name_en = "Eastern Strange Tale of Avarice"
+
+[03]
+name_jp = "天理人欲"
+composer = 1
+name_en = "Laws of Heaven, Desires of Man"
+
+[04]
+name_jp = "魔法使いの憂鬱"
+composer = 1
+name_en = "Magician's Melancholy"
+
+[05]
+name_jp = "暗闇の風穴"
+composer = 1
+name_en = "The Dark Blowhole"
+
+[06]
+name_jp = "旧地獄街道を行く"
+composer = 1
+name_en = "Walking the Streets of a Former Hell"
+
+[07]
+name_jp = "業火マントル"
+composer = 1
+name_en = "Hellfire Mantle"
+
+[08]
+name_jp = "御柱の墓場"
+composer = 1
+name_en = "Cemetery of Onbashira"
+
+[09]
+name_jp = "大地の底、剛欲の海"
+composer = 1
+name_en = "Depths of the Earth, Ocean of Avarice"
+
+[10]
+name_jp = "不朽の曼珠沙華"
+composer = 1
+name_en = "Everlasting Red Spider Lily"
+
+[11]
+name_jp = "魔法少女達の百年祭"
+composer = 1
+name_en = "The Centennial Festival for Magical Girls"
+
+[12]
+name_jp = "もうドアには入れない"
+composer = 1
+name_en = "No More Going Through Doors"
+
+[13]
+name_jp = "少女綺想曲"
+composer = 1
+name_en = "Maiden's Capriccio"
+
+[14]
+name_jp = "恋色マスタースパーク"
+composer = 1
+name_en = "Love-Colored Master Spark"
+
+[15]
+name_jp = "封じられた妖怪"
+composer = 1
+name_en = "The Sealed-Away Youkai"
+
+[16]
+name_jp = "万年置き傘にご注意を"
+composer = 1
+name_en = "Beware the Umbrella Left There Forever"
+
+[17]
+name_jp = "キャプテンムラサ"
+composer = 1
+name_en = "Captain Murasa"
+
+[18]
+name_jp = "神さびた古戦場"
+composer = 1
+name_en = "The Venerable Ancient Battlefield"
+
+[19]
+name_jp = "今宵は飄逸なエゴイスト　～ Egoistic Flowers"
+composer = 1
+name_en = "Tonight Stars an Easygoing Egoist ~ Egoistic Flowers"
+
+[20]
+name_jp = "華のさかづき大江山"
+composer = 1
+name_en = "A Flower-Studded Sake Dish on Mt. Ooe"
+
+[21]
+name_jp = "霊知の太陽信仰"
+composer = 1
+name_en = "Solar Sect of Mystic Wisdom"
+
+[22]
+name_jp = "セラフィックチキン"
+composer = 1
+name_en = "Seraphic Chicken"
+
+[23]
+name_jp = "U.N.オーエンは彼女なのか？"
+composer = 1
+name_en = "U.N. Owen Was Her?"
+
+[24]
+name_jp = "強欲な獣のメメント"
+composer = 2
+name_en = "Memento of the Avaricious Beast"
+
+[25]
+name_jp = "有機体全てのメメント　～ Memory of Fossil Energy."
+composer = 2
+name_en = "Memento of All Organisms ~ Memory of Fossil Energy."
+
+[26]
+name_jp = "秘神マターラ"
+composer = 1
+name_en = "Secret God Matara"
