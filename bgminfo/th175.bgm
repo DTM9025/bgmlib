@@ -76,76 +76,76 @@ composer = 1
 name_en = "The Centennial Festival for Magical Girls"
 
 [12]
-name_jp = "もうドアには入れない"
-composer = 1
-name_en = "No More Going Through Doors"
-
-[13]
 name_jp = "少女綺想曲"
 composer = 1
 name_en = "Maiden's Capriccio"
 
-[14]
+[13]
 name_jp = "恋色マスタースパーク"
 composer = 1
 name_en = "Love-Colored Master Spark"
 
-[15]
+[14]
 name_jp = "封じられた妖怪"
 composer = 1
 name_en = "The Sealed-Away Youkai"
 
-[16]
+[15]
 name_jp = "万年置き傘にご注意を"
 composer = 1
 name_en = "Beware the Umbrella Left There Forever"
 
-[17]
+[16]
 name_jp = "キャプテンムラサ"
 composer = 1
 name_en = "Captain Murasa"
 
-[18]
+[17]
 name_jp = "神さびた古戦場"
 composer = 1
 name_en = "The Venerable Ancient Battlefield"
 
-[19]
+[18]
 name_jp = "今宵は飄逸なエゴイスト　～ Egoistic Flowers"
 composer = 1
 name_en = "Tonight Stars an Easygoing Egoist ~ Egoistic Flowers"
 
-[20]
+[19]
 name_jp = "華のさかづき大江山"
 composer = 1
 name_en = "A Flower-Studded Sake Dish on Mt. Ooe"
 
-[21]
+[20]
 name_jp = "霊知の太陽信仰"
 composer = 1
 name_en = "Solar Sect of Mystic Wisdom"
 
-[22]
+[21]
 name_jp = "セラフィックチキン"
 composer = 1
 name_en = "Seraphic Chicken"
 
-[23]
+[22]
 name_jp = "U.N.オーエンは彼女なのか？"
 composer = 1
 name_en = "U.N. Owen Was Her?"
 
+[23]
+name_jp = "もうドアには入れない"
+composer = 1
+name_en = "No More Going Through Doors"
+
 [24]
+name_jp = "秘神マターラ"
+composer = 1
+name_en = "Secret God Matara"
+
+[25]
 name_jp = "強欲な獣のメメント"
 composer = 2
 name_en = "Memento of the Avaricious Beast"
 
-[25]
+[26]
 name_jp = "有機体全てのメメント　～ Memory of Fossil Energy."
 composer = 2
 name_en = "Memento of All Organisms ~ Memory of Fossil Energy."
-
-[26]
-name_jp = "秘神マターラ"
-composer = 1
-name_en = "Secret God Matara"
