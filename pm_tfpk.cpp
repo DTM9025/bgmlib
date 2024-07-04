@@ -13,7 +13,7 @@
 #include "packmethod.h"
 #include "utils.h"
 #include "pm_tfpk.h"
-#include "Rsa.h"
+#include "rsa.h"
 
 #ifdef WIN32
 #include <ctype.h>
