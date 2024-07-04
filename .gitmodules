@@ -10,3 +10,6 @@
 	path = libs/ogg
 	url = https://github.com/xiph/ogg
 	shallow = true
+[submodule "libs/MIRACL"]
+	path = libs/MIRACL
+	url = https://github.com/miracl/MIRACL
