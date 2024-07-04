@@ -2,7 +2,7 @@
 // ----------------------
 // bgmlib_all.h - Convenience header to include everything
 // ----------------------
-// "©" Nmlgc, 2011
+// "ï¿½" Nmlgc, 2011
 
 #include "platform.h"
 #include "list.h"
@@ -14,4 +14,5 @@
 #include "ui.h"
 #include "pm_zun.h"
 #include "pm_tasofro.h"
+#include "pm_tfpk.h"
 #include "libvorbis.h"

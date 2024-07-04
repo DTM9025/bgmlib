@@ -12,4 +12,4 @@
 	shallow = true
 [submodule "libs/MIRACL"]
 	path = libs/MIRACL
-	url = https://github.com/miracl/MIRACL
+	url = https://github.com/DTM9025/MIRACL

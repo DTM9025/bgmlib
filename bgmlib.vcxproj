@@ -90,7 +90,7 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>$(ProjectDir)libs\fox\include\;$(ProjectDir)libs\ogg\include\;$(ProjectDir)libs\vorbis\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)libs\fox\include\;$(ProjectDir)libs\ogg\include\;$(ProjectDir)libs\vorbis\include\;$(ProjectDir)libs\MIRACL\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib>
       <OutputFile>$(OutDir)$(ProjectName)_d.lib</OutputFile>
@@ -137,7 +137,7 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat />
-      <AdditionalIncludeDirectories>$(ProjectDir)libs\fox\include\;$(ProjectDir)libs\ogg\include\;$(ProjectDir)libs\vorbis\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)libs\fox\include\;$(ProjectDir)libs\ogg\include\;$(ProjectDir)libs\vorbis\include\;$(ProjectDir)libs\MIRACL\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib>
       <OutputFile>$(OutDir)$(ProjectName)_thvorbis.lib</OutputFile>
@@ -178,7 +178,9 @@
     <ClInclude Include="packmethod.h" />
     <ClInclude Include="platform.h" />
     <ClInclude Include="pm_tasofro.h" />
+    <ClInclude Include="pm_tfpk.h" />
     <ClInclude Include="pm_zun.h" />
+    <ClInclude Include="rsa.h" />
     <ClInclude Include="ui.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
@@ -191,6 +193,8 @@
     <ClCompile Include="pm_bgmdat.cpp" />
     <ClCompile Include="pm_bgmdir.cpp" />
     <ClCompile Include="pm_tasofro.cpp" />
+    <ClCompile Include="pm_tfpk.cpp" />
+    <ClCompile Include="rsa.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

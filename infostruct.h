@@ -2,7 +2,7 @@
 // ----------------------
 // infostruct.h - GameInfo and TrackInfo structures
 // ----------------------
-// "©" Nmlgc, 2010-2011
+// "ï¿½" Nmlgc, 2010-2011
 
 #ifndef BGMLIB_INFOSTRUCT_H
 #define BGMLIB_INFOSTRUCT_H
@@ -86,6 +86,13 @@ public:
 	
 	TrackInfo();
 	~TrackInfo();
+
+	// For Pak File Decrypting
+	uint okey[4];
+	uint skey[4];
+	ulong spos = 0;
+	ulong sfsize;
+	char isbpack = -1;
 };
 
 // Forward declarations
