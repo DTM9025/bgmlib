@@ -121,37 +121,13 @@ comment_jp = "おのけい先生の絵巻物スクロール演出とセットで
 filename = "data/bgm/title"
 
 [14]
-name_jp = "暁雲"
-composer = 1
-comment_en = "An ending theme in the usual, docile form.\nAs far as position within the game goes, this is the low point of the excitement curve.\nPlaying a song with a slow tempo really has a big effect. Delicious."
-name_en = "Morning Clouds"
-comment_jp = "いつもの通りの系統の素直なエンディング曲。\nポジション的に、ゲーム全体の盛り上がり曲線の谷に当たる場所。\n遅いテンポの曲は演奏してもらうと効果が大きい。おいしい。　Vc. 荒井英理也"
-filename = "data/bgm/ed"
-
-[15]
-name_jp = "官板黄昏新聞"
-composer = 1
-comment_en = "5/8 time is fun! Producing the staff roll is fun! It feels like making the images was harder than doing the song,\nbut I'm satisfied. The newspapers in this part don't have any random parts, but they're only on-screen for about 3 seconds\neach, so try to time it right an—"
-name_en = "Officially-Sanctioned Twilight Newspaper"
-comment_jp = "五拍子たのしい！　スタッフロール演出たのしい！　曲よりも画像作る方が大変\nだった気もするけど満足。こちらの新聞にランダム要素はありません。でも３秒\nくらいしか表示されないので、中身が気になる人はいい感じのタ　"
-filename = "data/bgm/staffroll"
-
-[16]
-name_jp = "本日の一面記事"
-composer = 1
-comment_en = "The newspapers displayed during VS mode have various random parts,\nso it's hard to see them all! After they're displayed, the characters appear and it's hard to see,\nso try to time it right and take a screenshot to check what they say!"
-name_en = "Today's Front-Page Headline"
-comment_jp = "ＶＳモード時に表示される新聞の見出しは、ランダムでそこそこ種類あるから、\n全部見るのは大変だぞ！　表示された後、キャラが出てきて見にくくなるので、\nいい感じのタイミングでがんばってスクリーンショットを撮って確認しよう！"
-filename = "data/bgm/win"
-
-[17]
 name_jp = "人気のある場所"
 composer = 1
 name_en = "A Popular Location"
 comment_jp = "汎用的な曲として作ったら、なんか使い勝手がよすぎて他に曲がいらなくなって\nしまった。飽きるかもしれないけど勘弁な！　密かにちゃんとＡＢサビ的なとこ\nろまで作ってあるけど、そこまで聞かれることはあんまり無い会話曲の宿命。"
 filename = "data/bgm/kaiwa1"
 
-[18]
+[15]
 name_jp = "人気のない場所"
 composer = 1
 comment_en = " It is like the part for a different feeling, with the triple time it goes a bit into a different feeling direction.\nThe title's \"popularity\", is it read as \"ninki\" or \"hitoke\"."
@@ -159,13 +135,37 @@ name_en = "An Unpopular Location"
 comment_jp = "違った感じのところ用なので、三拍子にしてちょっと違った感じを演出。\n曲名の「人気」の読み方は「にんき」「ひとけ」どちらでも。"
 filename = "data/bgm/kaiwa3"
 
-[19]
+[16]
 name_jp = "丑三つ時の里"
 composer = 1
 comment_en = "This one is kind of a creepy, unenthusiastic pre-boss theme. I tried to\nmake it so that it'd sound okay no matter where the song cut out, but there's a silent period between\nsongs, so I really didn't need to trouble myself with it at all. What a sad memory."
 name_en = "The Village in the Dead of Night"
 comment_jp = "今回は気持ち悪い感じで、あんまり盛り上げないボス前曲。どこからボス曲に切\nり替わっても、そこそこ大丈夫なように作っておいたのに、結局無音が曲の間に\n挟まれたので、別にそういう配慮はいらなかったという悲しい思い出。"
 filename = "data/bgm/kaiwa5"
+
+[17]
+name_jp = "本日の一面記事"
+composer = 1
+comment_en = "The newspapers displayed during VS mode have various random parts,\nso it's hard to see them all! After they're displayed, the characters appear and it's hard to see,\nso try to time it right and take a screenshot to check what they say!"
+name_en = "Today's Front-Page Headline"
+comment_jp = "ＶＳモード時に表示される新聞の見出しは、ランダムでそこそこ種類あるから、\n全部見るのは大変だぞ！　表示された後、キャラが出てきて見にくくなるので、\nいい感じのタイミングでがんばってスクリーンショットを撮って確認しよう！"
+filename = "data/bgm/win"
+
+[18]
+name_jp = "暁雲"
+composer = 1
+comment_en = "An ending theme in the usual, docile form.\nAs far as position within the game goes, this is the low point of the excitement curve.\nPlaying a song with a slow tempo really has a big effect. Delicious."
+name_en = "Morning Clouds"
+comment_jp = "いつもの通りの系統の素直なエンディング曲。\nポジション的に、ゲーム全体の盛り上がり曲線の谷に当たる場所。\n遅いテンポの曲は演奏してもらうと効果が大きい。おいしい。　Vc. 荒井英理也"
+filename = "data/bgm/ed"
+
+[19]
+name_jp = "官板黄昏新聞"
+composer = 1
+comment_en = "5/8 time is fun! Producing the staff roll is fun! It feels like making the images was harder than doing the song,\nbut I'm satisfied. The newspapers in this part don't have any random parts, but they're only on-screen for about 3 seconds\neach, so try to time it right an—"
+name_en = "Officially-Sanctioned Twilight Newspaper"
+comment_jp = "五拍子たのしい！　スタッフロール演出たのしい！　曲よりも画像作る方が大変\nだった気もするけど満足。こちらの新聞にランダム要素はありません。でも３秒\nくらいしか表示されないので、中身が気になる人はいい感じのタ　"
+filename = "data/bgm/staffroll"
 
 [20]
 name_jp = "演者選択"

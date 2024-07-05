@@ -24,12 +24,19 @@
 #define PV_KOKORO   0x0
 #define PV_SUMIREKO 0x1
 
+class Rsa;
 
 class PM_TFPK : public PackMethod
 {
 private:
-	uint SpecialFNVHash(const FXString& path);
+	uint SpecialFNVHash0(const FXString& path);
+	uint SpecialFNVHash1(const FXString& path);
 
+	inline ulong DecryptBuffer0(const uchar& CryptKind, char* Out, const ulong& Pos, const ulong& Size, uint* Key);	// Contains the decryption algorithm
+	inline ulong DecryptBuffer1(const uchar& CryptKind, char* Out, const ulong& Pos, const ulong& Size, uint* Key);	// Contains the decryption algorithm
+
+	void PM_TFPK::ReadFileInfo0(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak);
+	void PM_TFPK::ReadFileInfo1(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak);
 protected:
 	PM_TFPK()	{ID = BMPAK;}
 
@@ -42,8 +49,6 @@ protected:
 	void MetaData(GameInfo* GI, FXFile& In, const ulong& Pos, const ulong& Size, TrackInfo* TI);	// SFL Format
 
 	ulong DecryptFileWithKey(GameInfo* GI, FXFile& In, char* Out, const ulong& Pos, const ulong& Size, uint* Key);
-	inline ulong DecryptBuffer(const uchar& CryptKind, char* Out, const ulong& Pos, const ulong& Size, uint* Key);	// Contains the decryption algorithm
-
 public:
 	bool TrackData(GameInfo* GI);
 

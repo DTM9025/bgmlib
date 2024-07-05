@@ -93,15 +93,31 @@ bool PM_TFPK::DecryptHeader(GameInfo* GI, FXFile& In)
 // Data
 // ----
 #ifdef BGMLIB_LIBVORBIS_H
-ulong PM_TFPK::DecryptBuffer(const uchar& CryptKind, char* Out, const ulong& Pos, const ulong& Size, uint* Key)
+ulong PM_TFPK::DecryptBuffer0(const uchar& CryptKind, char* Out, const ulong& Pos, const ulong& Size, uint* Key)
 {
-	if (CryptKind == CR_KOKORO)
-	{
-		uchar *key = (uchar*)Key;
+	uchar *key = (uchar*)Key;
 
-		for (ulong i = 0; i < Size; i++)
-			Out[i] ^= key[i % 16];
+	for (ulong i = 0; i < Size; i++)
+		Out[i] ^= key[i % 16];
+
+	return Size;
+}
+
+ulong PM_TFPK::DecryptBuffer1(const uchar& CryptKind, char* Out, const ulong& Pos, const ulong& Size, uint* Key)
+{
+	uchar *key = (uchar*)Key;
+	uchar  aux[4];
+
+	for (int i = 0; i < 4; i++)
+		aux[i] = key[i];
+
+	for (ulong i = 0; i < Size; i++)
+	{
+		uchar tmp = Out[i];
+		Out[i] = Out[i] ^ key[i % 16] ^ aux[i % 4];
+		aux[i % 4] = tmp;
 	}
+
 	return Size;
 }
 
@@ -112,7 +128,17 @@ ulong PM_TFPK::DecryptFileWithKey(GameInfo* GI, FXFile& In, char* Out, const ulo
 	if(!In.position(Pos)) return 0;
 	ulong Ret = In.readBlock(Out, Size);
 
-	DecryptBuffer(GI->CryptKind, Out, Pos, Size, Key);
+	switch (GI->CryptKind)
+	{
+		case CR_KOKORO:
+			DecryptBuffer0(GI->CryptKind, Out, Pos, Size, Key);
+			break;
+
+		case CR_SUMIREKO:
+			DecryptBuffer1(GI->CryptKind, Out, Pos, Size, Key);
+			break;
+	}
+
 	return Ret;
 }
 
@@ -166,6 +192,90 @@ void PM_TFPK::MetaData(GameInfo* GI, FX::FXFile& In, const ulong& Pos, const ulo
 	SAFE_DELETE_ARRAY(SFL);
 }
 
+void PM_TFPK::ReadFileInfo0(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak)
+{
+	ListItem listItem;
+	uint hash;
+	uint key[4];
+
+	ListEntry<TrackInfo>* CurTrack;
+	FXString fnogg;
+	FXString fnsfl;
+
+	rsa.read((char*)&listItem, sizeof(listItem));
+	rsa.read((char*)&hash, sizeof(hash));
+	rsa.read((char*)key, sizeof(key));
+
+	CurTrack = GI->Track.First();
+	while (CurTrack)
+	{ // TODO: Optimize!
+		fnogg = FXString(CurTrack->Data.NativeFN).append(".ogg");
+		if (hash == SpecialFNVHash0(fnogg))
+		{
+			memcpy(CurTrack->Data.okey, key, sizeof(key));
+			CurTrack->Data.isbpack = isbpak;
+			AudioData(GI, In, listItem.Offset, listItem.FileSize, &CurTrack->Data);
+			break;
+		}
+
+		fnsfl = FXString(CurTrack->Data.NativeFN).append(".sfl");
+		if (hash == SpecialFNVHash0(fnsfl))
+		{
+			memcpy(CurTrack->Data.skey, key, sizeof(key));
+			CurTrack->Data.spos = listItem.Offset;
+			CurTrack->Data.sfsize = listItem.FileSize;
+			break;
+		}
+
+		CurTrack = CurTrack->Next();
+	}
+}
+
+void PM_TFPK::ReadFileInfo1(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak)
+{
+	ListItem listItem;
+	uint hash[2];
+	uint key[4];
+
+	ListEntry<TrackInfo>* CurTrack;
+	FXString fnogg;
+	FXString fnsfl;
+
+	rsa.read((char*)&listItem, sizeof(listItem));
+	rsa.read((char*)&hash, sizeof(hash));
+	rsa.read((char*)key, sizeof(key));
+
+	listItem.FileSize ^= key[0];
+	listItem.Offset ^= key[1];
+	hash[0] ^= key[2];
+	for (int i = 0; i < 4; i++)
+		key[i] *= -1;
+
+	CurTrack = GI->Track.First();
+	while (CurTrack)
+	{ // TODO: Optimize!
+		fnogg = FXString(CurTrack->Data.NativeFN).append(".ogg");
+		if (hash[0] == SpecialFNVHash1(fnogg))
+		{
+			memcpy(CurTrack->Data.okey, key, sizeof(key));
+			CurTrack->Data.isbpack = isbpak;
+			AudioData(GI, In, listItem.Offset, listItem.FileSize, &CurTrack->Data);
+			break;
+		}
+
+		fnsfl = FXString(CurTrack->Data.NativeFN).append(".sfl");
+		if (hash[0] == SpecialFNVHash1(fnsfl))
+		{
+			memcpy(CurTrack->Data.skey, key, sizeof(key));
+			CurTrack->Data.spos = listItem.Offset;
+			CurTrack->Data.sfsize = listItem.FileSize;
+			break;
+		}
+
+		CurTrack = CurTrack->Next();
+	}
+}
+
 void PM_TFPK::GetPosData(GameInfo* GI, FXFile& In, char isbpak)
 {
 	Rsa rsa(In);
@@ -191,44 +301,20 @@ void PM_TFPK::GetPosData(GameInfo* GI, FXFile& In, char isbpak)
 	uint fileCount;
 	rsa.read(&fileCount, sizeof(uint));
 
-	ListItem listItem;
-	uint hash;
-	uint key[4];
-
 	ListEntry<TrackInfo>* CurTrack;
 	TrackInfo* TI;
 
-	FXString fnogg;
-	FXString fnsfl;
-
 	for (uint i = 0; i < fileCount; i++)
 	{
-		rsa.read((char*)&listItem, sizeof(listItem));
-		rsa.read((char*)&hash, sizeof(hash));
-		rsa.read((char*)key, sizeof(key));
-
-		CurTrack = GI->Track.First();
-		while (CurTrack)
-		{ // TODO: Optimize!
-			fnogg = FXString(CurTrack->Data.NativeFN).append(".ogg");
-			if (hash == SpecialFNVHash(fnogg))
-			{
-				memcpy(CurTrack->Data.okey, key, sizeof(key));
-				CurTrack->Data.isbpack = isbpak;
-				PF_TD_ParseArchiveFile(GI, In, fnogg, "ogg", "sfl", listItem.Offset, listItem.FileSize);
+		switch (GI->CryptKind)
+		{
+			case CR_KOKORO:
+				ReadFileInfo0(GI, In, rsa, isbpak);
 				break;
-			}
-
-			fnsfl = FXString(CurTrack->Data.NativeFN).append(".sfl");
-			if (hash == SpecialFNVHash(fnsfl))
-			{
-				memcpy(CurTrack->Data.skey, key, sizeof(key));
-				CurTrack->Data.spos = listItem.Offset;
-				CurTrack->Data.sfsize = listItem.FileSize;
+			
+			case CR_SUMIREKO:
+				ReadFileInfo1(GI, In, rsa, isbpak);
 				break;
-			}
-
-			CurTrack = CurTrack->Next();
 		}
 	}
 
@@ -327,7 +413,7 @@ GameInfo* PM_TFPK::Scan(const FXString& Path)
 // --------
 
 // Hashing Utilities
-uint PM_TFPK::SpecialFNVHash(const FXString& path)
+uint PM_TFPK::SpecialFNVHash0(const FXString& path)
 {
 	const char *cpath = (char*) path.text();
 	uint initHash = 0x811C9DC5u;
@@ -346,4 +432,25 @@ uint PM_TFPK::SpecialFNVHash(const FXString& path)
 		}
 	}
 	return hash;
+}
+
+uint PM_TFPK::SpecialFNVHash1(const FXString& path)
+{
+	const char *cpath = (char*) path.text();
+	uint initHash = 0x811C9DC5u;
+	uint hash; // eax@1
+	uint ch; // esi@2
+
+	for (hash = initHash; *cpath; hash = (hash ^ ch) * 0x1000193)
+	{
+		unsigned char c = *cpath++;
+		ch = c;
+		if ((c & 0x80) == 0)
+		{
+			ch = tolower(ch);
+			if (ch == '/')
+			ch = '\\';
+		}
+	}
+	return hash * -1;
 }
