@@ -311,6 +311,8 @@ void PM_TFPK::GetPosData(GameInfo* GI, FXFile& In, char isbpak)
 				hashsfl = SpecialFNVHash1(fnsfl);
 				break;
 		}
+		//Using a custom dictionary that allows uints as keys had neligable performance improvements, so just use the FXDict.
+		//Since it only accepts strings as keys, transform hash into its string representation.
 		char bufogg[16];
 		sprintf(bufogg, "%u", hashogg);
 		dict_ogg.insert(bufogg, &CurTrack->Data);
