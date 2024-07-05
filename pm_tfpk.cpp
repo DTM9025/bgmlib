@@ -192,54 +192,42 @@ void PM_TFPK::MetaData(GameInfo* GI, FX::FXFile& In, const ulong& Pos, const ulo
 	SAFE_DELETE_ARRAY(SFL);
 }
 
-void PM_TFPK::ReadFileInfo0(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak)
+void PM_TFPK::ReadFileInfo0(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, FXDict* dictOgg, FXDict* dictSfl)
 {
 	ListItem listItem;
 	uint hash;
 	uint key[4];
 
-	ListEntry<TrackInfo>* CurTrack;
-	FXString fnogg;
-	FXString fnsfl;
-
 	rsa.read((char*)&listItem, sizeof(listItem));
 	rsa.read((char*)&hash, sizeof(hash));
 	rsa.read((char*)key, sizeof(key));
 
-	CurTrack = GI->Track.First();
-	while (CurTrack)
-	{ // TODO: Optimize!
-		fnogg = FXString(CurTrack->Data.NativeFN).append(".ogg");
-		if (hash == SpecialFNVHash0(fnogg))
-		{
-			memcpy(CurTrack->Data.okey, key, sizeof(key));
-			CurTrack->Data.isbpack = isbpak;
-			AudioData(GI, In, listItem.Offset, listItem.FileSize, &CurTrack->Data);
-			break;
-		}
+	char buf[16];
+	sprintf(buf, "%u", hash);
+	TrackInfo* ret = (TrackInfo*)dictOgg->find(buf);
+	if (ret != NULL)
+	{
+		memcpy(ret->okey, key, sizeof(key));
+		ret->isbpack = isbpak;
+		AudioData(GI, In, listItem.Offset, listItem.FileSize, ret);
+		return;
+	}
 
-		fnsfl = FXString(CurTrack->Data.NativeFN).append(".sfl");
-		if (hash == SpecialFNVHash0(fnsfl))
-		{
-			memcpy(CurTrack->Data.skey, key, sizeof(key));
-			CurTrack->Data.spos = listItem.Offset;
-			CurTrack->Data.sfsize = listItem.FileSize;
-			break;
-		}
-
-		CurTrack = CurTrack->Next();
+	ret = (TrackInfo*)dictSfl->find(buf);
+	if (ret != NULL)
+	{
+		memcpy(ret->skey, key, sizeof(key));
+		ret->spos = listItem.Offset;
+		ret->sfsize = listItem.FileSize;
+		return;
 	}
 }
 
-void PM_TFPK::ReadFileInfo1(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak)
+void PM_TFPK::ReadFileInfo1(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, FXDict* dictOgg, FXDict* dictSfl)
 {
 	ListItem listItem;
 	uint hash[2];
 	uint key[4];
-
-	ListEntry<TrackInfo>* CurTrack;
-	FXString fnogg;
-	FXString fnsfl;
 
 	rsa.read((char*)&listItem, sizeof(listItem));
 	rsa.read((char*)&hash, sizeof(hash));
@@ -251,28 +239,24 @@ void PM_TFPK::ReadFileInfo1(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak)
 	for (int i = 0; i < 4; i++)
 		key[i] *= -1;
 
-	CurTrack = GI->Track.First();
-	while (CurTrack)
-	{ // TODO: Optimize!
-		fnogg = FXString(CurTrack->Data.NativeFN).append(".ogg");
-		if (hash[0] == SpecialFNVHash1(fnogg))
-		{
-			memcpy(CurTrack->Data.okey, key, sizeof(key));
-			CurTrack->Data.isbpack = isbpak;
-			AudioData(GI, In, listItem.Offset, listItem.FileSize, &CurTrack->Data);
-			break;
-		}
+	char buf[16];
+	sprintf(buf, "%u", hash[0]);
+	TrackInfo* ret = (TrackInfo*)dictOgg->find(buf);
+	if (ret != NULL)
+	{
+		memcpy(ret->okey, key, sizeof(key));
+		ret->isbpack = isbpak;
+		AudioData(GI, In, listItem.Offset, listItem.FileSize, ret);
+		return;
+	}
 
-		fnsfl = FXString(CurTrack->Data.NativeFN).append(".sfl");
-		if (hash[0] == SpecialFNVHash1(fnsfl))
-		{
-			memcpy(CurTrack->Data.skey, key, sizeof(key));
-			CurTrack->Data.spos = listItem.Offset;
-			CurTrack->Data.sfsize = listItem.FileSize;
-			break;
-		}
-
-		CurTrack = CurTrack->Next();
+	ret = (TrackInfo*)dictSfl->find(buf);
+	if (ret != NULL)
+	{
+		memcpy(ret->skey, key, sizeof(key));
+		ret->spos = listItem.Offset;
+		ret->sfsize = listItem.FileSize;
+		return;
 	}
 }
 
@@ -304,16 +288,50 @@ void PM_TFPK::GetPosData(GameInfo* GI, FXFile& In, char isbpak)
 	ListEntry<TrackInfo>* CurTrack;
 	TrackInfo* TI;
 
+	FXDict dict_ogg = FXDict();
+	FXDict dict_sfl = FXDict();
+	FXString fnogg;
+	FXString fnsfl;
+
+	CurTrack = GI->Track.First();
+	while (CurTrack)
+	{
+		fnogg = FXString(CurTrack->Data.NativeFN).append(".ogg");
+		fnsfl = FXString(CurTrack->Data.NativeFN).append(".sfl");
+		uint hashogg;
+		uint hashsfl;
+		switch (GI->CryptKind)
+		{
+			case CR_KOKORO:
+				hashogg = SpecialFNVHash0(fnogg);
+				hashsfl = SpecialFNVHash0(fnsfl);
+				break;
+			case CR_SUMIREKO:
+				hashogg = SpecialFNVHash1(fnogg);
+				hashsfl = SpecialFNVHash1(fnsfl);
+				break;
+		}
+		char bufogg[16];
+		sprintf(bufogg, "%u", hashogg);
+		dict_ogg.insert(bufogg, &CurTrack->Data);
+
+		char bufsfl[16];
+		sprintf(bufsfl, "%u", hashsfl);
+		dict_sfl.insert(bufsfl, &CurTrack->Data);
+
+		CurTrack = CurTrack->Next();
+	}
+
 	for (uint i = 0; i < fileCount; i++)
 	{
 		switch (GI->CryptKind)
 		{
 			case CR_KOKORO:
-				ReadFileInfo0(GI, In, rsa, isbpak);
+				ReadFileInfo0(GI, In, rsa, isbpak, &dict_ogg, &dict_sfl);
 				break;
 			
 			case CR_SUMIREKO:
-				ReadFileInfo1(GI, In, rsa, isbpak);
+				ReadFileInfo1(GI, In, rsa, isbpak, &dict_ogg, &dict_sfl);
 				break;
 		}
 	}
