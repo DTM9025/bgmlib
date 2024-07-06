@@ -15,4 +15,5 @@
 #include "pm_zun.h"
 #include "pm_tasofro.h"
 #include "pm_tfpk.h"
+#include "pm_tfcga.h"
 #include "libvorbis.h"

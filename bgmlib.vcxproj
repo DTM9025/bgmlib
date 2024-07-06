@@ -171,6 +171,7 @@
     <ClInclude Include="bgmlib_all.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="infostruct.h" />
+    <ClInclude Include="ini.h" />
     <ClInclude Include="libvorbis.h" />
     <ClInclude Include="list.cpp.h" />
     <ClInclude Include="list.h" />
@@ -178,6 +179,7 @@
     <ClInclude Include="packmethod.h" />
     <ClInclude Include="platform.h" />
     <ClInclude Include="pm_tasofro.h" />
+    <ClInclude Include="pm_tfcga.h" />
     <ClInclude Include="pm_tfpk.h" />
     <ClInclude Include="pm_zun.h" />
     <ClInclude Include="rsa.h" />
@@ -188,11 +190,13 @@
     <ClCompile Include="bgmlib.cpp" />
     <ClCompile Include="config.cpp" />
     <ClCompile Include="infostruct.cpp" />
+    <ClCompile Include="ini.c" />
     <ClCompile Include="libvorbis.cpp" />
     <ClCompile Include="packmethod.cpp" />
     <ClCompile Include="pm_bgmdat.cpp" />
     <ClCompile Include="pm_bgmdir.cpp" />
     <ClCompile Include="pm_tasofro.cpp" />
+    <ClCompile Include="pm_tfcga.cpp" />
     <ClCompile Include="pm_tfpk.cpp" />
     <ClCompile Include="rsa.cpp" />
     <ClCompile Include="utils.cpp" />

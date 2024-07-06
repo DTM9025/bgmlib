@@ -7,6 +7,9 @@ Changelog
 NOTE: This file only lists changes to supported games and the back-end engine.
       Refer to the musicroom changelog for changes to the user interface program.
 
+- 2024/07/06 (Version 2.4.0)
+* Added support for TH17.5 and changed the included BGM files to fit.
+
 - 2024/07/05 (Version 2.3.0)
 * Added support for TH13.5, TH14.5, and TH15.5 and changed the included BGM files to fit.
 

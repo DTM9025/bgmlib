@@ -2,7 +2,7 @@
 // ----------------------
 // platform.h - The most basic includes
 // ----------------------
-// "©" Nmlgc, 2011
+// "ï¿½" Nmlgc, 2011
 
 #ifndef BGMLIB_PLATFORM_H
 #define BGMLIB_PLATFORM_H
@@ -24,6 +24,8 @@ typedef unsigned short ushort;
 typedef unsigned char u8;
 typedef unsigned int uint;
 typedef unsigned long ulong;
+typedef long long i64;
+typedef unsigned long long u64; //One day I'll do a big refactor and use standard int types like uint64_t
 
 // Platform dependant macros
 #ifndef WIN32
