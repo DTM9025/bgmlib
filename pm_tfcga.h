@@ -43,10 +43,10 @@ private:
 	uint SpecialFNVHash(const FXString& fname);
 
 	void DoPartialXOR(char* dst, char* src, ulong size);
-	uint PM_TFCGA::DoDecryptStep(uint key);
-	inline ulong PM_TFCGA::DecryptBuffer(char* Out, const ulong& Pos, const ulong& Size);	// Contains the decryption algorithm
+	uint DoDecryptStep(uint key);
+	inline ulong DecryptBuffer(char* Out, const ulong& Pos, const ulong& Size);	// Contains the decryption algorithm
 
-	void PM_TFCGA::ReadFileInfo(GameInfo* GI, FXFile& In, FileDesc& rsa, char isbpak, FXDict* dictOgg, FXDict* dictIni);
+	void ReadFileInfo(GameInfo* GI, FXFile& In, FileDesc& rsa, char isbpak, FXDict* dictOgg, FXDict* dictIni);
 protected:
 	PM_TFCGA()	{ID = BMCGA;}
 
