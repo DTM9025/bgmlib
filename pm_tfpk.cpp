@@ -2,7 +2,7 @@
 // ----------------------
 // pm_tfpk.cpp - Parsing for Tasofro PAK archives
 // ----------------------
-// "�" DTM9025, 2024
+// "©" DTM9025, 2024
 
 #include "platform.h"
 #include <FXSystem.h>
@@ -142,36 +142,26 @@ ulong PM_TFPK::DecryptFileWithKey(GameInfo* GI, FXFile& In, char* Out, const ulo
 	return Ret;
 }
 
-ulong PM_TFPK::DecryptFile(GameInfo* GI, FXFile& In, char* Out, const ulong& Pos, const ulong& Size, volatile FXulong* p)
+ulong PM_TFPK::DecryptMusic(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p)
 {
 	if (!Out)	return NULL;
 
-	ListEntry<TrackInfo>* CurTrack = GI->Track.First();
-	while (CurTrack)
+	if (TI->isbpack == 0)
 	{
-		// Hack for now. Probably want to refactor to have DecryptFile include the desired track info
-		if (CurTrack->Data.GetStart() == Pos && CurTrack->Data.FS == Size)
-		{
-			if (CurTrack->Data.isbpack == 0)
-			{
-				ulong Ret = DecryptFileWithKey(GI, In, Out, Pos, Size, CurTrack->Data.okey);
-				if (p)	*p = Ret;
-				return Ret;
-			}
-			else if (CurTrack->Data.isbpack == 1)
-			{
-				FXFile InTemp;
-				FXString bfname = FXString(GI->DiskFN(&CurTrack->Data)).substitute(".pak", "b.pak");
-				if (!InTemp.open(bfname, FXIO::Reading)) return 0;
+		ulong Ret = DecryptFileWithKey(GI, In, Out, TI->GetStart(), TI->FS, TI->okey);
+		if (p)	*p = Ret;
+		return Ret;
+	}
+	else if (TI->isbpack == 1)
+	{
+		FXFile InTemp;
+		FXString bfname = FXString(GI->DiskFN(TI)).substitute(".pak", "b.pak");
+		if (!InTemp.open(bfname, FXIO::Reading)) return 0;
 
-				ulong Ret = DecryptFileWithKey(GI, InTemp, Out, Pos, Size, CurTrack->Data.okey);
-				InTemp.close();
-				if (p)	*p = Ret;
-				return Ret;
-			}
-		}
-
-		CurTrack = CurTrack->Next();
+		ulong Ret = DecryptFileWithKey(GI, InTemp, Out, TI->GetStart(), TI->FS, TI->okey);
+		InTemp.close();
+		if (p)	*p = Ret;
+		return Ret;
 	}
 
 	return NULL;
@@ -278,9 +268,9 @@ void PM_TFPK::GetPosData(GameInfo* GI, FXFile& In, char isbpak)
 
 	FnHeader fnHeader;
 	rsa.read((char*)&fnHeader, sizeof(FnHeader));
-	char* fnbuffer = (char*) malloc(fnHeader.blockCount * RSA_BLOCK_SIZE);
+	char* fnbuffer = new char[fnHeader.blockCount * RSA_BLOCK_SIZE];
 	rsa.read(fnbuffer, fnHeader.blockCount * RSA_BLOCK_SIZE);
-	free(fnbuffer);
+	SAFE_DELETE_ARRAY(fnbuffer);
 
 	uint fileCount;
 	rsa.read(&fileCount, sizeof(uint));
@@ -372,7 +362,7 @@ void PM_TFPK::GetPosData(GameInfo* GI, FXFile& In, char isbpak)
 
 			// Right. This is indeed faster than the CryptFile solution.
 			VFile Dec(TI->FS);
-			DecryptFile(GI, In, Dec.Buf, TI->GetStart(), Dec.Size, &Dec.Write);
+			DecryptMusic(GI, In, Dec.Buf, TI, &Dec.Write);
 
 			OggVorbis_File SF;
 			if (ov_open_callbacks(&Dec, &SF, NULL, 0, OV_CALLBACKS_VFILE))

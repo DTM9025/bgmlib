@@ -2,7 +2,8 @@
 // ----------------------
 // pm_tasofro.cpp - Parsing for Tasofro archives
 // ----------------------
-// "�" Nmlgc, 2010
+// "©" Nmlgc, 2010
+// "©" DTM9025, 2024
 
 #include "platform.h"
 #include <FXSystem.h>
@@ -238,14 +239,14 @@ ulong PM_BMOgg::DecryptBuffer(const uchar& CryptKind, char* Out, const ulong& Po
 	return Size;
 }
 
-ulong PM_BMOgg::DecryptFile(GameInfo* GI, FXFile& In, char* Out, const ulong& Pos, const ulong& Size, volatile FXulong* p)
+ulong PM_BMOgg::DecryptMusic(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p)
 {
 	if(!Out)	return NULL;
 
-	if(!In.position(Pos))	return 0;
-	ulong Ret = In.readBlock(Out, Size);
+	if(!In.position(TI->GetStart()))	return 0;
+	ulong Ret = In.readBlock(Out, TI->FS);
 
-	DecryptBuffer(GI->CryptKind, Out, Pos, Ret);
+	DecryptBuffer(GI->CryptKind, Out, TI->GetStart(), Ret);
 	if(p)	*p = Ret;
 
 	return Ret;
@@ -254,7 +255,9 @@ ulong PM_BMOgg::DecryptFile(GameInfo* GI, FXFile& In, char* Out, const ulong& Po
 void PM_BMOgg::MetaData(GameInfo* GI, FX::FXFile& In, const ulong& Pos, const ulong& Size, TrackInfo* TI)
 {
 	char* SFL = new char[Size];
-	DecryptFile(GI, In, SFL, Pos, Size);
+	In.position(Pos);
+	ulong Ret = In.readBlock(SFL, Size);
+	DecryptBuffer(GI->CryptKind, SFL, Pos, Ret);
 
 	char* p = SFL + 28;
 
@@ -319,7 +322,7 @@ void PM_BMOgg::GetPosData(GameInfo* GI, FXFile& In, FXushort& Files, char* hdr, 
 
 			// Right. This is indeed faster than the CryptFile solution.
 			VFile Dec(TI->FS);
-			DecryptFile(GI, In, Dec.Buf, TI->GetStart(), Dec.Size, &Dec.Write);
+			DecryptMusic(GI, In, Dec.Buf, TI, &Dec.Write);
 
 			OggVorbis_File SF;
 			if(ov_open_callbacks(&Dec, &SF, NULL, 0, OV_CALLBACKS_VFILE))

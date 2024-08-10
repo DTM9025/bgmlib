@@ -2,7 +2,7 @@
 // ----------------------
 // PM_TFCGA.h - Twilight Frontier's Pack Methods for TH17.5
 // ----------------------
-// "�" DTM9025, 2024
+// "©" DTM9025, 2024
 
 #ifndef BGMLIB_PM_TFCGA_H
 #define BGMLIB_PM_TFCGA_H
@@ -65,7 +65,7 @@ public:
 
 	FXString DiskFN(GameInfo* GI, TrackInfo* TI);
 
-	ulong DecryptFile(GameInfo* GI, FXFile& In, char* Out, const ulong& Pos, const ulong& Size, volatile FXulong* p = NULL);
+	ulong DecryptMusic(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p = NULL);
 
 	GameInfo* Scan(const FXString& Path);	// Scans [Path] for a game packed with this 
 	

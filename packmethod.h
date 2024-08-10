@@ -2,7 +2,8 @@
 // ----------------------
 // packmethod.h - Pack Method Base Class
 // ----------------------
-// "�" Nmlgc, 2010-2011
+// "©" Nmlgc, 2010-2011
+// "©" DTM9025, 2024
 
 #ifndef BGMLIB_PACKMETHOD_H
 #define BGMLIB_PACKMETHOD_H
@@ -66,9 +67,9 @@ public:
 	const short& GetID()	{return ID;}
 
 	// Decryption function, called by <Dump> and the extractor. Returns the number of source bytes read from the file (important if encryption changes file size!)
-	virtual ulong DecryptFile(GameInfo* GI, FXFile& In, char* Out, const ulong& Pos, const ulong& Size, volatile FXulong* p = NULL) {return 0;}
+	virtual ulong DecryptMusic(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p = NULL) {return 0;}
 
-	bool Dump(GameInfo* GI, FXFile& In, const ulong& Pos, const ulong& Size, const FXString& DumpFN, volatile FXulong* p = NULL);
+	bool Dump(GameInfo* GI, FXFile& In, TrackInfo* TI, const FXString& DumpFN, volatile FXulong* p = NULL);
 
 	virtual bool ParseGameInfo(ConfigFile& NewGame, GameInfo* GI) = 0;
 	virtual bool ParseTrackInfo(ConfigFile& NewGame, GameInfo* GI, ConfigParser* TS, TrackInfo* NewTrack) = 0;		// return true if position data should be read from config file

@@ -2,7 +2,8 @@
 // ----------------------
 // packmethod.cpp - Pack Method Base Class
 // ----------------------
-// "�" Nmlgc, 2010-2011
+// "©" Nmlgc 2010-2011
+// "©" DTM9025, 2024
 
 #include "platform.h"
 
@@ -167,7 +168,7 @@ void PackMethod::AudioData(GameInfo* GI, FXFile& In, const ulong& Pos, const ulo
 	TI->FS = Size;
 }
 
-bool PackMethod::Dump(GameInfo* GI, FXFile& In, const ulong& Pos, const ulong& Size, const FXString& DumpFN, volatile FXulong* p)
+bool PackMethod::Dump(GameInfo* GI, FXFile& In, TrackInfo* TI, const FXString& DumpFN, volatile FXulong* p)
 {
 	FXFile Dec;
 	if(!Dec.open(DumpFN, FXIO::Writing))
@@ -176,10 +177,10 @@ bool PackMethod::Dump(GameInfo* GI, FXFile& In, const ulong& Pos, const ulong& S
 		return false;
 	}
 
-	char* DecBuf = new char[Size];
+	char* DecBuf = new char[TI->FS];
 
-	DecryptFile(GI, In, DecBuf, Pos, Size, p);
-	Dec.writeBlock(DecBuf, Size);
+	DecryptMusic(GI, In, DecBuf, TI, p);
+	Dec.writeBlock(DecBuf, TI->FS);
 	SAFE_DELETE_ARRAY(DecBuf);
 
 	Dec.close();

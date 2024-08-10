@@ -2,7 +2,7 @@
 // ----------------------
 // pm_tfpk.cpp - Parsing for Tasofro CGA archives
 // ----------------------
-// "�" DTM9025, 2024
+// "©" DTM9025, 2024
 
 #include "platform.h"
 #include <FXSystem.h>
@@ -143,40 +143,30 @@ ulong PM_TFCGA::DecryptBuffer(char* Out, const ulong& Pos, const ulong& Size)
 	return Size;
 }
 
-ulong PM_TFCGA::DecryptFile(GameInfo* GI, FXFile& In, char* Out, const ulong& Pos, const ulong& Size, volatile FXulong* p)
+ulong PM_TFCGA::DecryptMusic(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p)
 {
 	if (!Out)	return NULL;
 
-	ListEntry<TrackInfo>* CurTrack = GI->Track.First();
-	while (CurTrack)
+	if (TI->isbpack == 0)
 	{
-		// Hack for now. Probably want to refactor to have DecryptFile include the desired track info
-		if (CurTrack->Data.GetStart() == Pos && CurTrack->Data.FS == Size)
-		{
-			if (CurTrack->Data.isbpack == 0)
-			{
-				if(!In.position(Pos)) return 0;
-				ulong Ret = In.readBlock(Out, Size);
-				Ret = DecryptBuffer(Out, Pos, Size);
-				if (p)	*p = Ret;
-				return Ret;
-			}
-			else if (CurTrack->Data.isbpack == 1)
-			{
-				FXFile InTemp;
-				FXString bfname = FXString(GI->DiskFN(&CurTrack->Data)).substitute(".cga", ".cgb");
-				if (!InTemp.open(bfname, FXIO::Reading)) return 0;
+		if(!In.position(TI->GetStart())) return 0;
+		ulong Ret = In.readBlock(Out, TI->FS);
+		Ret = DecryptBuffer(Out, TI->GetStart(), TI->FS);
+		if (p)	*p = Ret;
+		return Ret;
+	}
+	else if (TI->isbpack == 1)
+	{
+		FXFile InTemp;
+		FXString bfname = FXString(GI->DiskFN(TI)).substitute(".cga", ".cgb");
+		if (!InTemp.open(bfname, FXIO::Reading)) return 0;
 
-				if(!InTemp.position(Pos)) return 0;
-				ulong Ret = InTemp.readBlock(Out, Size);
-				Ret = DecryptBuffer(Out, Pos, Size);
-				InTemp.close();
-				if (p)	*p = Ret;
-				return Ret;
-			}
-		}
-
-		CurTrack = CurTrack->Next();
+		if(!InTemp.position(TI->GetStart())) return 0;
+		ulong Ret = InTemp.readBlock(Out, TI->FS);
+		Ret = DecryptBuffer(Out, TI->GetStart(), TI->FS);
+		InTemp.close();
+		if (p)	*p = Ret;
+		return Ret;
 	}
 
 	return NULL;
@@ -184,7 +174,7 @@ ulong PM_TFCGA::DecryptFile(GameInfo* GI, FXFile& In, char* Out, const ulong& Po
 
 void PM_TFCGA::MetaData(GameInfo* GI, FX::FXFile& In, const ulong& Pos, const ulong& Size, TrackInfo* TI)
 {
-	char* buf = (char*)malloc(Size + 1);
+	char* buf = new char[Size + 1];
 	buf[Size] = '\0';
 
 	In.position(Pos);
@@ -198,7 +188,7 @@ void PM_TFCGA::MetaData(GameInfo* GI, FX::FXFile& In, const ulong& Pos, const ul
 	TI->Loop = oggini.repeatstart;
 	TI->End = oggini.repeatend;
 
-	free(buf);
+	SAFE_DELETE_ARRAY(buf);
 }
 
 void PM_TFCGA::ReadFileInfo(GameInfo* GI, FXFile& In, FileDesc& fdesc, char isbpak, FXDict* dictOgg, FXDict* dictIni)
@@ -299,7 +289,7 @@ void PM_TFCGA::GetPosData(GameInfo* GI, FXFile& In, char isbpak, uint numfiles)
 
 			// Right. This is indeed faster than the CryptFile solution.
 			VFile Dec(TI->FS);
-			DecryptFile(GI, In, Dec.Buf, TI->GetStart(), Dec.Size, &Dec.Write);
+			DecryptMusic(GI, In, Dec.Buf, TI, &Dec.Write);
 
 			OggVorbis_File SF;
 			if (ov_open_callbacks(&Dec, &SF, NULL, 0, OV_CALLBACKS_VFILE))

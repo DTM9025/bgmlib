@@ -2,7 +2,8 @@
 // ----------------------
 // libvorbis.cpp - Ogg Vorbis stuff
 // ----------------------
-// "�" Nmlgc, 2011
+// "©" Nmlgc, 2011
+// "©" DTM9025, 2024
 
 #include "platform.h"
 #include "infostruct.h"
@@ -43,7 +44,7 @@ bool DumpDecrypt(GameInfo* GI, TrackInfo* TI, const FXString& OutFN)
 	FXFile Src;
 
 	if(!GI->OpenBGMFile(Src, TI))	return Ret;
-	Ret = GI->PM->Dump(GI, Src, TI->GetStart(), TI->FS, OutFN);
+	Ret = GI->PM->Dump(GI, Src, TI, OutFN);
 	Src.close();
 	return Ret;
 }
