@@ -14,7 +14,7 @@
 
 ## License
 
-In summary, unless stated otherwise, bgmlib and its source files are licensed under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+In summary, unless stated otherwise, bgmlib and its source files are licensed under the terms of the GNU General Public License version 3 as published by the Free Software Foundation.
 
 This project uses various third-party libraries, which have their own licenses, compatible with this project's license.
 
