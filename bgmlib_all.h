@@ -2,7 +2,8 @@
 // ----------------------
 // bgmlib_all.h - Convenience header to include everything
 // ----------------------
-// "�" Nmlgc, 2011
+// "©" Nmlgc, 2011
+// "©" DTM9025, 2024
 
 #include "platform.h"
 #include "list.h"

@@ -2,7 +2,8 @@
 // ----------------------
 // platform.h - The most basic includes
 // ----------------------
-// "�" Nmlgc, 2011
+// "©" Nmlgc, 2011
+// "©" DTM9025, 2024
 
 #ifndef BGMLIB_PLATFORM_H
 #define BGMLIB_PLATFORM_H

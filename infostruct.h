@@ -2,7 +2,8 @@
 // ----------------------
 // infostruct.h - GameInfo and TrackInfo structures
 // ----------------------
-// "�" Nmlgc, 2010-2011
+// "©" Nmlgc, 2010-2011
+// "©" DTM9025, 2024
 
 #ifndef BGMLIB_INFOSTRUCT_H
 #define BGMLIB_INFOSTRUCT_H

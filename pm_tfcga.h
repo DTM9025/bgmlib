@@ -65,7 +65,7 @@ public:
 
 	FXString DiskFN(GameInfo* GI, TrackInfo* TI);
 
-	ulong DecryptMusic(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p = NULL);
+	ulong DecryptTrack(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p = NULL);
 
 	GameInfo* Scan(const FXString& Path);	// Scans [Path] for a game packed with this 
 	

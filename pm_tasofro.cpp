@@ -239,7 +239,7 @@ ulong PM_BMOgg::DecryptBuffer(const uchar& CryptKind, char* Out, const ulong& Po
 	return Size;
 }
 
-ulong PM_BMOgg::DecryptMusic(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p)
+ulong PM_BMOgg::DecryptTrack(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p)
 {
 	if(!Out)	return NULL;
 
@@ -322,7 +322,7 @@ void PM_BMOgg::GetPosData(GameInfo* GI, FXFile& In, FXushort& Files, char* hdr, 
 
 			// Right. This is indeed faster than the CryptFile solution.
 			VFile Dec(TI->FS);
-			DecryptMusic(GI, In, Dec.Buf, TI, &Dec.Write);
+			DecryptTrack(GI, In, Dec.Buf, TI, &Dec.Write);
 
 			OggVorbis_File SF;
 			if(ov_open_callbacks(&Dec, &SF, NULL, 0, OV_CALLBACKS_VFILE))

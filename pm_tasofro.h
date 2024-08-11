@@ -89,7 +89,7 @@ public:
 
 	inline ulong DecryptBuffer(const uchar& CryptKind, char* Out, const ulong& Pos, const ulong& Size);	// Contains the decryption algorithm
 
-	ulong DecryptMusic(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p = NULL);
+	ulong DecryptTrack(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p = NULL);
 
 	GameInfo* Scan(const FXString& Path);	// Scans [Path] for a game packed with this method
 	FXString DiskFN(GameInfo* GI, TrackInfo* TI);

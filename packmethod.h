@@ -67,7 +67,7 @@ public:
 	const short& GetID()	{return ID;}
 
 	// Decryption function, called by <Dump> and the extractor. Returns the number of source bytes read from the file (important if encryption changes file size!)
-	virtual ulong DecryptMusic(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p = NULL) {return 0;}
+	virtual ulong DecryptTrack(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p = NULL) {return 0;}
 
 	bool Dump(GameInfo* GI, FXFile& In, TrackInfo* TI, const FXString& DumpFN, volatile FXulong* p = NULL);
 

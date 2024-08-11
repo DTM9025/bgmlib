@@ -179,7 +179,7 @@ bool PackMethod::Dump(GameInfo* GI, FXFile& In, TrackInfo* TI, const FXString& D
 
 	char* DecBuf = new char[TI->FS];
 
-	DecryptMusic(GI, In, DecBuf, TI, p);
+	DecryptTrack(GI, In, DecBuf, TI, p);
 	Dec.writeBlock(DecBuf, TI->FS);
 	SAFE_DELETE_ARRAY(DecBuf);
 

@@ -142,7 +142,7 @@ ulong PM_TFPK::DecryptFileWithKey(GameInfo* GI, FXFile& In, char* Out, const ulo
 	return Ret;
 }
 
-ulong PM_TFPK::DecryptMusic(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p)
+ulong PM_TFPK::DecryptTrack(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, volatile FXulong* p)
 {
 	if (!Out)	return NULL;
 
@@ -362,7 +362,7 @@ void PM_TFPK::GetPosData(GameInfo* GI, FXFile& In, char isbpak)
 
 			// Right. This is indeed faster than the CryptFile solution.
 			VFile Dec(TI->FS);
-			DecryptMusic(GI, In, Dec.Buf, TI, &Dec.Write);
+			DecryptTrack(GI, In, Dec.Buf, TI, &Dec.Write);
 
 			OggVorbis_File SF;
 			if (ov_open_callbacks(&Dec, &SF, NULL, 0, OV_CALLBACKS_VFILE))
