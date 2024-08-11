@@ -11,3 +11,11 @@
 * Make sure to consistently set the same *C/C++ → Code Generation → Runtime Library* option in all projects, because not all of them will come with the same by default.
 
   Most of them should then compile fine. See the [README](https://github.com/DTM9025/musicroom#touhou-music-room) for the Touhou Music Room for more detailed instructions to build this for that program.
+
+## License
+
+In summary, unless stated otherwise, bgmlib and its source files are licensed under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This project uses various third-party libraries, which have their own licenses, compatible with this project's license.
+
+The full license terms are detailed in [Touhou Music Room's `LICENSE.md`](https://github.com/DTM9025/musicroom/blob/master/LICENSE.md)
