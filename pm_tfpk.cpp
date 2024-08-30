@@ -14,6 +14,7 @@
 #include "utils.h"
 #include "pm_tfpk.h"
 #include "rsa.h"
+#include "hashmap_utils.h"
 
 #ifdef WIN32
 #include <ctype.h>
@@ -182,7 +183,7 @@ void PM_TFPK::MetaData(GameInfo* GI, FX::FXFile& In, const ulong& Pos, const ulo
 	SAFE_DELETE_ARRAY(SFL);
 }
 
-void PM_TFPK::ReadFileInfo0(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, FXDict* dictOgg, FXDict* dictSfl)
+void PM_TFPK::ReadFileInfo0(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, hashmap* dictOgg, hashmap* dictSfl)
 {
 	ListItem listItem;
 	uint hash;
@@ -192,28 +193,27 @@ void PM_TFPK::ReadFileInfo0(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, FXD
 	rsa.read((char*)&hash, sizeof(hash));
 	rsa.read((char*)key, sizeof(key));
 
-	char buf[16];
-	sprintf(buf, "%u", hash);
-	TrackInfo* ret = (TrackInfo*)dictOgg->find(buf);
+	DictItem dkey = { hash };
+	DictItem* ret = (DictItem*) hashmap_get(dictOgg, &dkey);
 	if (ret != NULL)
 	{
-		memcpy(ret->okey, key, sizeof(key));
-		ret->isbpack = isbpak;
-		AudioData(GI, In, listItem.Offset, listItem.FileSize, ret);
+		memcpy(ret->TI->okey, key, sizeof(key));
+		ret->TI->isbpack = isbpak;
+		AudioData(GI, In, listItem.Offset, listItem.FileSize, ret->TI);
 		return;
 	}
 
-	ret = (TrackInfo*)dictSfl->find(buf);
+	ret = (DictItem*) hashmap_get(dictSfl, &dkey);
 	if (ret != NULL)
 	{
-		memcpy(ret->skey, key, sizeof(key));
-		ret->spos = listItem.Offset;
-		ret->sfsize = listItem.FileSize;
+		memcpy(ret->TI->skey, key, sizeof(key));
+		ret->TI->spos = listItem.Offset;
+		ret->TI->sfsize = listItem.FileSize;
 		return;
 	}
 }
 
-void PM_TFPK::ReadFileInfo1(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, FXDict* dictOgg, FXDict* dictSfl)
+void PM_TFPK::ReadFileInfo1(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, hashmap* dictOgg, hashmap* dictSfl)
 {
 	ListItem listItem;
 	uint hash[2];
@@ -229,23 +229,22 @@ void PM_TFPK::ReadFileInfo1(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, FXD
 	for (int i = 0; i < 4; i++)
 		key[i] *= -1;
 
-	char buf[16];
-	sprintf(buf, "%u", hash[0]);
-	TrackInfo* ret = (TrackInfo*)dictOgg->find(buf);
+	DictItem dkey = { hash[0] };
+	DictItem* ret = (DictItem*) hashmap_get(dictOgg, &dkey);
 	if (ret != NULL)
 	{
-		memcpy(ret->okey, key, sizeof(key));
-		ret->isbpack = isbpak;
-		AudioData(GI, In, listItem.Offset, listItem.FileSize, ret);
+		memcpy(ret->TI->okey, key, sizeof(key));
+		ret->TI->isbpack = isbpak;
+		AudioData(GI, In, listItem.Offset, listItem.FileSize, ret->TI);
 		return;
 	}
 
-	ret = (TrackInfo*)dictSfl->find(buf);
+	ret = (DictItem*) hashmap_get(dictSfl, &dkey);
 	if (ret != NULL)
 	{
-		memcpy(ret->skey, key, sizeof(key));
-		ret->spos = listItem.Offset;
-		ret->sfsize = listItem.FileSize;
+		memcpy(ret->TI->skey, key, sizeof(key));
+		ret->TI->spos = listItem.Offset;
+		ret->TI->sfsize = listItem.FileSize;
 		return;
 	}
 }
@@ -278,8 +277,8 @@ void PM_TFPK::GetPosData(GameInfo* GI, FXFile& In, char isbpak)
 	ListEntry<TrackInfo>* CurTrack;
 	TrackInfo* TI;
 
-	FXDict dict_ogg = FXDict();
-	FXDict dict_sfl = FXDict();
+	hashmap *dict_ogg = hashmap_new(sizeof(DictItem), 0, 0, 0, dict_hash, dict_compare, NULL, NULL);
+	hashmap *dict_sfl = hashmap_new(sizeof(DictItem), 0, 0, 0, dict_hash, dict_compare, NULL, NULL);
 	FXString fnogg;
 	FXString fnsfl;
 
@@ -301,15 +300,11 @@ void PM_TFPK::GetPosData(GameInfo* GI, FXFile& In, char isbpak)
 				hashsfl = SpecialFNVHash1(fnsfl);
 				break;
 		}
-		//Using a custom dictionary that allows uints as keys had neligable performance improvements, so just use the FXDict.
-		//Since it only accepts strings as keys, transform hash into its string representation.
-		char bufogg[16];
-		sprintf(bufogg, "%u", hashogg);
-		dict_ogg.insert(bufogg, &CurTrack->Data);
+		DictItem ogg_item = { hashogg, &CurTrack->Data};
+		hashmap_set(dict_ogg, &ogg_item);
 
-		char bufsfl[16];
-		sprintf(bufsfl, "%u", hashsfl);
-		dict_sfl.insert(bufsfl, &CurTrack->Data);
+		DictItem sfl_item = { hashsfl, &CurTrack->Data};
+		hashmap_set(dict_sfl, &sfl_item);
 
 		CurTrack = CurTrack->Next();
 	}
@@ -319,11 +314,11 @@ void PM_TFPK::GetPosData(GameInfo* GI, FXFile& In, char isbpak)
 		switch (GI->CryptKind)
 		{
 			case CR_KOKORO:
-				ReadFileInfo0(GI, In, rsa, isbpak, &dict_ogg, &dict_sfl);
+				ReadFileInfo0(GI, In, rsa, isbpak, dict_ogg, dict_sfl);
 				break;
 			
 			case CR_SUMIREKO:
-				ReadFileInfo1(GI, In, rsa, isbpak, &dict_ogg, &dict_sfl);
+				ReadFileInfo1(GI, In, rsa, isbpak, dict_ogg, dict_sfl);
 				break;
 		}
 	}

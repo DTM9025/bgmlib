@@ -170,6 +170,8 @@
     <ClInclude Include="bgmlib.h" />
     <ClInclude Include="bgmlib_all.h" />
     <ClInclude Include="config.h" />
+    <ClInclude Include="hashmap.h" />
+    <ClInclude Include="hashmap_utils.h" />
     <ClInclude Include="infostruct.h" />
     <ClInclude Include="ini.h" />
     <ClInclude Include="libvorbis.h" />
@@ -189,6 +191,7 @@
   <ItemGroup>
     <ClCompile Include="bgmlib.cpp" />
     <ClCompile Include="config.cpp" />
+    <ClCompile Include="hashmap.c" />
     <ClCompile Include="infostruct.cpp" />
     <ClCompile Include="ini.c" />
     <ClCompile Include="libvorbis.cpp" />

@@ -8,7 +8,7 @@
 #define BGMLIB_PM_TFPK_H
 #include <FXHash.h>
 #include <FXStream.h>
-#include <FXDict.h>
+#include "hashmap.h"
 
 // Pack Methods
 #define BMPAK   0x6	// Vorbis files and SFL loop info in .pak files with header (th135 - th155)
@@ -38,8 +38,8 @@ private:
 	inline ulong DecryptBuffer0(const uchar& CryptKind, char* Out, const ulong& Pos, const ulong& Size, uint* Key);	// Contains the decryption algorithm
 	inline ulong DecryptBuffer1(const uchar& CryptKind, char* Out, const ulong& Pos, const ulong& Size, uint* Key);	// Contains the decryption algorithm
 
-	void PM_TFPK::ReadFileInfo0(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, FXDict* dictOgg, FXDict* dictSfl);
-	void PM_TFPK::ReadFileInfo1(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, FXDict* dictOgg, FXDict* dictSfl);
+	void PM_TFPK::ReadFileInfo0(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, hashmap* dictOgg, hashmap* dictSfl);
+	void PM_TFPK::ReadFileInfo1(GameInfo* GI, FXFile& In, Rsa& rsa, char isbpak, hashmap* dictOgg, hashmap* dictSfl);
 protected:
 	PM_TFPK()	{ID = BMPAK;}
 

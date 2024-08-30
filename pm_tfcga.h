@@ -8,7 +8,7 @@
 #define BGMLIB_PM_TFCGA_H
 #include <FXHash.h>
 #include <FXStream.h>
-#include <FXDict.h>
+#include "hashmap.h"
 
 // Pack Methods
 #define BMCGA   0x7	// Vorbis files and INI loop info in .cga/b files with footer (th175)
@@ -46,7 +46,7 @@ private:
 	uint DoDecryptStep(uint key);
 	inline ulong DecryptBuffer(char* Out, const ulong& Pos, const ulong& Size);	// Contains the decryption algorithm
 
-	void ReadFileInfo(GameInfo* GI, FXFile& In, FileDesc& rsa, char isbpak, FXDict* dictOgg, FXDict* dictIni);
+	void ReadFileInfo(GameInfo* GI, FXFile& In, FileDesc& rsa, char isbpak, hashmap* dictOgg, hashmap* dictIni);
 protected:
 	PM_TFCGA()	{ID = BMCGA;}
 

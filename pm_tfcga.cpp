@@ -14,6 +14,7 @@
 #include "utils.h"
 #include "pm_tfcga.h"
 #include "ini.h"
+#include "hashmap_utils.h"
 
 #ifdef WIN32
 #include <ctype.h>
@@ -191,25 +192,24 @@ void PM_TFCGA::MetaData(GameInfo* GI, FX::FXFile& In, const ulong& Pos, const ul
 	SAFE_DELETE_ARRAY(buf);
 }
 
-void PM_TFCGA::ReadFileInfo(GameInfo* GI, FXFile& In, FileDesc& fdesc, char isbpak, FXDict* dictOgg, FXDict* dictIni)
+void PM_TFCGA::ReadFileInfo(GameInfo* GI, FXFile& In, FileDesc& fdesc, char isbpak, hashmap* dictOgg, hashmap* dictIni)
 {
 	uint hash = fdesc.key;
 
-	char buf[16];
-	sprintf(buf, "%u", hash);
-	TrackInfo* ret = (TrackInfo*)dictOgg->find(buf);
+	DictItem dkey = { hash };
+	DictItem* ret = (DictItem*) hashmap_get(dictOgg, &dkey);
 	if (ret != NULL)
 	{
-		ret->isbpack = isbpak;
-		AudioData(GI, In, fdesc.offset, fdesc.size, ret);
+		ret->TI->isbpack = isbpak;
+		AudioData(GI, In, fdesc.offset, fdesc.size, ret->TI);
 		return;
 	}
 
-	ret = (TrackInfo*)dictIni->find(buf);
+	ret = (DictItem*) hashmap_get(dictIni, &dkey);
 	if (ret != NULL)
 	{
-		ret->spos = fdesc.offset;
-		ret->sfsize = fdesc.size;
+		ret->TI->spos = fdesc.offset;
+		ret->TI->sfsize = fdesc.size;
 		return;
 	}
 }
@@ -219,8 +219,8 @@ void PM_TFCGA::GetPosData(GameInfo* GI, FXFile& In, char isbpak, uint numfiles)
 	ListEntry<TrackInfo>* CurTrack;
 	TrackInfo* TI;
 
-	FXDict dict_ogg = FXDict();
-	FXDict dict_ini = FXDict();
+	hashmap *dict_ogg = hashmap_new(sizeof(DictItem), 0, 0, 0, dict_hash, dict_compare, NULL, NULL);
+	hashmap *dict_ini = hashmap_new(sizeof(DictItem), 0, 0, 0, dict_hash, dict_compare, NULL, NULL);
 	FXString fnogg;
 	FXString fnini;
 
@@ -232,16 +232,11 @@ void PM_TFCGA::GetPosData(GameInfo* GI, FXFile& In, char isbpak, uint numfiles)
 		uint hashogg = SpecialFNVHash(fnogg);
 		uint hashini = SpecialFNVHash(fnini);
 
-		//Using a custom dictionary that allows uints as keys had neligable performance improvements, so just use the FXDict.
-		//Since it only accepts strings as keys, transform hash into its string representation.
-		char bufogg[16];
-		sprintf(bufogg, "%u", hashogg);
-		dict_ogg.insert(bufogg, &CurTrack->Data);
+		DictItem ogg_item = { hashogg, &CurTrack->Data};
+		hashmap_set(dict_ogg, &ogg_item);
 
-		char bufini[16];
-		sprintf(bufini, "%u", hashini);
-		dict_ini.insert(bufini, &CurTrack->Data);
-
+		DictItem sfl_item = { hashini, &CurTrack->Data};
+		hashmap_set(dict_ini, &sfl_item);
 		CurTrack = CurTrack->Next();
 	}
 
@@ -255,7 +250,7 @@ void PM_TFCGA::GetPosData(GameInfo* GI, FXFile& In, char isbpak, uint numfiles)
 
 	for (uint i = 0; i < numfiles; i++)
 	{
-		ReadFileInfo(GI, In, ftable[i], isbpak, &dict_ogg, &dict_ini);
+		ReadFileInfo(GI, In, ftable[i], isbpak, dict_ogg, dict_ini);
 	}
 
 	free(ftable);
