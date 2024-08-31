@@ -235,8 +235,8 @@ void PM_TFCGA::GetPosData(GameInfo* GI, FXFile& In, char isbpak, uint numfiles)
 		DictItem ogg_item = { hashogg, &CurTrack->Data};
 		hashmap_set(dict_ogg, &ogg_item);
 
-		DictItem sfl_item = { hashini, &CurTrack->Data};
-		hashmap_set(dict_ini, &sfl_item);
+		DictItem ini_item = { hashini, &CurTrack->Data};
+		hashmap_set(dict_ini, &ini_item);
 		CurTrack = CurTrack->Next();
 	}
 
