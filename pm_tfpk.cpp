@@ -71,6 +71,10 @@ bool PM_TFPK::ParseTrackInfo(ConfigFile &NewGame, GameInfo *GI, ConfigParser* TS
 
 FXString PM_TFPK::DiskFN(GameInfo* GI, TrackInfo* TI)
 {
+	if (TI->isbpack == 1)
+	{
+		return FXString(GI->BGMFile).substitute(".pak", "b.pak");
+	}
 	return GI->BGMFile;
 }
 
@@ -147,25 +151,9 @@ ulong PM_TFPK::DecryptTrack(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI, 
 {
 	if (!Out)	return NULL;
 
-	if (TI->isbpack == 0)
-	{
-		ulong Ret = DecryptFileWithKey(GI, In, Out, TI->GetStart(), TI->FS, TI->okey);
-		if (p)	*p = Ret;
-		return Ret;
-	}
-	else if (TI->isbpack == 1)
-	{
-		FXFile InTemp;
-		FXString bfname = FXString(GI->DiskFN(TI)).substitute(".pak", "b.pak");
-		if (!InTemp.open(bfname, FXIO::Reading)) return 0;
-
-		ulong Ret = DecryptFileWithKey(GI, InTemp, Out, TI->GetStart(), TI->FS, TI->okey);
-		InTemp.close();
-		if (p)	*p = Ret;
-		return Ret;
-	}
-
-	return NULL;
+	ulong Ret = DecryptFileWithKey(GI, In, Out, TI->GetStart(), TI->FS, TI->okey);
+	if (p)	*p = Ret;
+	return Ret;
 }
 
 void PM_TFPK::MetaData(GameInfo* GI, FX::FXFile& In, const ulong& Pos, const ulong& Size, TrackInfo* TI)
