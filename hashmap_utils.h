@@ -25,7 +25,7 @@ static int dict_compare(const void *a, const void *b, void *udata) {
 
 static uint64_t dict_hash(const void *item, uint64_t seed0, uint64_t seed1) {
     const struct DictItem *entry = (DictItem*)item;
-    return hashmap_murmur(&entry->hash, sizeof(uint32_t), seed0, seed1);
+    return hashmap_sip(&entry->hash, sizeof(uint32_t), seed0, seed1);
 }
 
 #endif /* BGMLIB_HASHMAP_UTILS_H */

@@ -79,10 +79,6 @@ bool PM_TFCGA::ParseTrackInfo(ConfigFile &NewGame, GameInfo *GI, ConfigParser* T
 
 FXString PM_TFCGA::DiskFN(GameInfo* GI, TrackInfo* TI)
 {
-	if (TI->isbpack == 1)
-	{
-		return FXString(GI->BGMFile).substitute(".cga", ".cgb");
-	}
 	return GI->BGMFile;
 }
 
@@ -152,11 +148,29 @@ ulong PM_TFCGA::DecryptTrack(GameInfo* GI, FXFile& In, char* Out, TrackInfo* TI,
 {
 	if (!Out)	return NULL;
 
-	if(!In.position(TI->GetStart())) return 0;
-	ulong Ret = In.readBlock(Out, TI->FS);
-	Ret = DecryptBuffer(Out, TI->GetStart(), TI->FS);
-	if (p)	*p = Ret;
-	return Ret;
+	if (TI->isbpack == 0)
+	{
+		if(!In.position(TI->GetStart())) return 0;
+		ulong Ret = In.readBlock(Out, TI->FS);
+		Ret = DecryptBuffer(Out, TI->GetStart(), TI->FS);
+		if (p)	*p = Ret;
+		return Ret;
+	}
+	else if (TI->isbpack == 1)
+	{
+		FXFile InTemp;
+		FXString bfname = FXString(GI->DiskFN(TI)).substitute(".cga", ".cgb");
+		if (!InTemp.open(bfname, FXIO::Reading)) return 0;
+
+		if(!InTemp.position(TI->GetStart())) return 0;
+		ulong Ret = InTemp.readBlock(Out, TI->FS);
+		Ret = DecryptBuffer(Out, TI->GetStart(), TI->FS);
+		InTemp.close();
+		if (p)	*p = Ret;
+		return Ret;
+	}
+
+	return NULL;
 }
 
 void PM_TFCGA::MetaData(GameInfo* GI, FX::FXFile& In, const ulong& Pos, const ulong& Size, TrackInfo* TI)
