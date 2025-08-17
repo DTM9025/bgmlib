@@ -1,0 +1,193 @@
+﻿# Music Room Interface Info
+ 
+[game]
+name = "東方錦上京 〜 Fossilized Wonders"
+name_en = "Touhou Kinjoukyou ~ Fossilized Wonders"
+artist = "ZUN"
+circle = "上海アリス幻樂団"
+circle_en = "Team Shanghai Alice"
+year = 2025
+gamenum = "20"
+ 
+packmethod = 2
+bgmfile = "thbgm.dat"
+zwavid_08 = 0x00
+zwavid_09 = 0x20
+ 
+tracks = 19
+ 
+[thvorbis]
+patchclass = "generic"
+ 
+[update]
+wikipage = "Fossilized_Wonders/Music"
+wikirev = 503275
+
+[01]
+name_jp = "錦の上の巫女"
+filename = "th20_01.wav"
+position = "0x000010, 0x0576e0, 0x107dcc0"
+frequency = 44100
+name_en = "Shrine Maiden Crowned with Glory"
+comment_jp = "タイトル画面のテーマです。\n\nゲームタイトル通り、優美な感じを出しました。\nゲームの内容的には、切迫した不穏さが爆発していて、\nそんな優美な感じでも無いんですけどね。\nでも、タイトル画面位は気持ちいい方が良いですよね。"
+comment_en = "The title screen theme.\n\nIt has a sense of refinement like the game's title.\nAs for the game itself, it booms with a sense of \nurgent unrest, and that sense of refinement is all but lost.\nStill, the title screen feels all nice, so it's fine."
+
+[02]
+name_jp = "愛おしき塵の住処"
+filename = "th20_02.wav"
+position = "0x107dcd0, 0x25b480, 0x15ef980"
+frequency = 44100
+name_en = "Beloved Dwelling of Dust"
+comment_jp = "１面のテーマです。\n\n軽快さの中に決意のような物を感じる曲になりました。\nサビの儚さと憂鬱さは、このゲームのストーリー観を\n表しているかの様です。\nちなみに塵の住処とは、俗世間の事です。やっぱり俗だよね。"
+comment_en = "The first stage theme.\n\nThe song has a sort of light-hearted feeling of determination.\nThe game's story is expressed by the transience and melancholy \nof the chorus. By the way, the dwelling of dust is the mundane world.\nBecause it's mundane, after all."
+
+[03]
+name_jp = "例え世界から忘れられても"
+filename = "th20_03.wav"
+position = "0x266d650, 0x079b00, 0x109fe40"
+frequency = 44100
+name_en = "Even if Forgotten by the World"
+comment_jp = "塵塚ウバメのテーマです。\n\n一面らしい軽快さに、ハードでダークな雰囲気をもりもりに\nしました。彼女は山姥の王という格好良い設定を持っていま\nすが、家に帰れなくなって困っているという情けない場面で\n霊夢達と出会うことになります。不憫です。"
+comment_en = "Ubame Chirizuka's theme.\n\nThe first stage's lightheartedness is fully complemented \nby a hard and dark ambiance. She holds a cool role as King\nof the Yamanbas, but encountered Reimu and the others while \nin the miserable situation of being unable to return home. \nWhat a pity."
+
+[04]
+name_jp = "セイクリッドフォレスト"
+filename = "th20_04.wav"
+position = "0x370d490, 0x0d5620, 0x17a19c0"
+frequency = 44100
+name_en = "Sacred Forest"
+comment_jp = "２面のテーマです。\n\n一定のリズムでずっと流れているピアノメロディが、\n独特な雰囲気を醸し出していて気に入っています。\n上空から見たら昼なのに、森の中からは夜という不思議は\nどうやったら実現出来るのか、気になっています。"
+comment_en = "The second stage theme.\n\nThe piano medley playing in a steady rhythm creates\na unique atmosphere, which I like. I'm curious about\nhow the wonder of it being daytime from above but \nnighttime from within the forest is possible."
+
+[05]
+name_jp = "森にはお化けがいるよ"
+filename = "th20_05.wav"
+position = "0x4eaee50, 0x2419a0, 0x1727f40"
+frequency = 44100
+name_en = "There's a Monster in the Woods"
+comment_jp = "封獣チミのテーマです。\n\n正体不明の妖怪です。曲も思い切りの良さだけ作ったので、\n出来上がるまでどうなるか判らなかった正体不明曲です。\n意味深な存在ですが、妖怪が学問になる前から存在していた\n純粋なもののけです。幻想郷にはそういうのも居ます。"
+comment_en = "Chimi Houjuu's theme.\n\nAn unidentified youkai. I composed this song with \nall of my might, and it remained unidentifiable to \nme until I finished it. She has a profound nature \nas a pure spirit that existed before people learned \nof youkai. Even things such as this exist in Gensokyo."
+
+[06]
+name_jp = "プレステ・ジョアンの黄金境"
+filename = "th20_06.wav"
+position = "0x65d6d90, 0x119e90, 0x18978e0"
+frequency = 44100
+name_en = "Golden Land of Prester John"
+comment_jp = "３面のテーマです。\n\n異国感と冒険感を持たせた前半と、祭壇発見後の畏怖と\n寂寥感を感じさせる後半の２パートに曲が分かれてます。\n今の世界で冒険譚なんてもう成立しないかも、と思うと\n寂しくなりますね。せめて霊夢達だけでも冒険させたいです。"
+comment_en = "The third stage theme.\n\nThe song is divided into two parts: the first half evokes \na sense of exoticism and adventure, and the second evokes \na sense of awe and desolation after the altar is discovered. \nIt makes me sad that in the present world, adventure stories \nmay no longer be possible. At the very least, I want Reimu \nand the others to have an adventure."
+
+[07]
+name_jp = "どうせなら命を賭けて謎を解け"
+filename = "th20_07.wav"
+position = "0x7e6e670, 0x06eb40, 0x1694c00"
+frequency = 44100
+name_en = "Might as Well Stake Your Life to Solve the Riddle"
+comment_jp = "道神馴子のテーマです。\n\n無駄に格好良い曲です。元祖、謎解き王スフィンクスの\n真似をしてますが、彼女の正体は、道ばたで見つけると\nほっこりするあの道祖神です。ほっこりしますよね。\nサビは今作全体の雰囲気を上手く表現できていると思ってます。"
+comment_en = "Nareko Michigami's theme.\n\nA needlessly cool composition. She's imitating the Sphinx, \nthe original Mystery-Solving King, but truthfully she's just \none of those comforting old dousojin​ you'd find on the side of \nthe road. Doesn't that put you at ease? I think the chorus \nexpresses the overall feeling of the work as a whole well."
+
+[08]
+name_jp = "フォーカラーラビリンス"
+filename = "th20_08.wav"
+position = "0x9503270, 0x0d4f00, 0x1c7ff00"
+frequency = 44100
+comment_en = " The fourth stage theme.\n\nA mysterious song with a sense of speed.\nJust because it's a pyramid, I didn't want it to become\na traditional Egyptian tune. Even so, this mysterious melody,\nwith its foreign- and Japanese-sounding styles, is quite the labyrinth."
+name_en = "Four-Color Labyrinth"
+comment_jp = "４面のテーマです\n\nスピード感のあるミステリアスな曲です。\nピラミッドだからといって、安易にエジプト伝統的な曲調に\nならないようにしました。それでいて異国のような、和風な\nような不思議なメロディはまさにラビリンス。"
+
+[09]
+name_jp = "鹿狩りのレミニセンス"
+filename = "th20_09.wav"
+position = "0xb183170, 0x4c5100, 0x1da8f00"
+frequency = 44100
+comment_en = " Asama Yuiman's theme.\n\nI didn't decide what this song would be like until it was complete,\nbut rather let myself be guided by the spirit of the hunt (?).\nAs a result, it turned out to be a cool song with a piano melody.\nI'm surprised that it turned out to be a song that feels like my usual style."
+name_en = "Reminiscence of Deer-Hunting"
+comment_jp = "ユイマン・浅間のテーマです\n\n出来上がるまでどんな曲にするのか自分でも決めないで、\n鹿狩りの精神（？）が導くままに創りました。\nその結果、ピアノの旋律がかっこいい曲に落ち着きました。\n結果としていつも通りな曲な気がして驚いています。"
+
+[10]
+name_jp = "記憶の深海に沈む少女"
+filename = "th20_10.wav"
+position = "0xcf2c070, 0x2a1100, 0x1e09000"
+frequency = 44100
+comment_en = "The fifth stage theme.\n\nI enjoyed composing this song due to its rare oceanic feeling.\nIt has a focus on nostalgia and adorable charm.\nFor some reason, there's this intoxicating sense of immersion,\nbut that might be because I was actually intoxicated while composing it..."
+name_en = "The Maiden Sinking into the Deep Sea of Memory"
+comment_jp = "５面のテーマです\n\n数少ない海感を出していい曲なので楽しみました。\n懐かしさと可愛らしさに重点を置いています。\nなぜか少し没入できる酩酊感があるのは、実際に作曲時に\n酩酊していたからだと思います……。"
+
+[11]
+name_jp = "綿月のスペルカード　〜 神海戦"
+filename = "th20_11.wav"
+position = "0xed35070, 0x099a00, 0x1998180"
+frequency = 44100
+comment_en = "Wakatsuki no Toyohime's theme.\n\nA spiritual arrangement of a pretty obscure song that came with a book.\nThe atmosphere is quite different from the original, because I arranged it\ncompletely from memory without listening to the original whatsoever (lol).\nIt's a battle song with a sense of relaxation, which gives off a good feeling."
+name_en = "Watatsuki's Spell Card ~ Divine Sea Battle"
+comment_jp = "綿月 豊姫のテーマです\n\n書籍についていた超マイナー曲の精神的アレンジ版です。\n元の曲とはだいぶ雰囲気が違うのは、元の曲を聞かないで\n完全にうろ覚えアレンジしたからです（笑）\n余裕のある戦闘曲という感じで気持ちいいです。"
+
+[12]
+name_jp = "ピラミッドの神域"
+filename = "th20_13.wav"
+position = "0x106cd1f0, 0x058640, 0x107ed80"
+frequency = 44100
+comment_en = "The sixth stage theme.\n\nSorrow, and an uncanny and heartfelt nature... a good song for the end.\n\nIt would be exciting if there was an enigmatic shrine at the bottom of the pyramid.\nWell, it's not like we'll ever encounter such a thing."
+name_en = "Sacred Precincts of the Pyramid"
+comment_jp = "６面のテーマです\n\n悲しさと不気味さと心細さとー……。と終盤らしい曲です。\n\nピラミッドの底に謎の神社があったらワクワクするよね。\nま、そんな場面に出くわすことはないんでしょうけど。"
+
+[13]
+name_jp = "最後の一人は慣れてるから　〜 Stone Goddess"
+filename = "th20_12.wav"
+position = "0x1174bf70, 0x21b9c0, 0x20bedc0"
+frequency = 44100
+comment_en = "Ariya Iwanaga's theme.\n\nA stone goddess sealed at the bottom of the pyramid,\nneither able to die nor live. I thought this would pair well \nwith a vocal track, but I ended up making an instrumental one (lol)\nThe melodious chorus is a must-listen."
+name_en = "Because the Last One is Used to it ~ Stone Goddess"
+comment_jp = "磐永 阿梨夜のテーマです\n\nピラミッドの底に封印されている死ぬ事も生きる事も\n出来ない石の女神。これに合うのはもうヴォーカル曲\nしなかいな、と思いながらインスト曲を作りました（笑）\nメロディアスなサビは必聴です。"
+
+[14]
+name_jp = "ファンタスティックドルフト"
+filename = "th20_17.wav"
+position = "0x1380ad30, 0x097f00, 0x1f59600"
+frequency = 44100
+comment_en = "The extra stage theme.\n\nA song with a wondrous and floating feel to it.\nIt's a light tune, completely at odds from the heaviness of the main story, \nbut for some reason it still has a touch of sadness to it.\nI really like the eastern essence here and there in the song."
+name_en = "Fantastic Drift"
+comment_jp = "エキストラステージのテーマです\n\n不思議と浮遊感のある曲になりました。\n本編ラストの重さから一変して、軽い曲調ですが\nどこか切ない感じは何故か残ったままです。\nところどころにある東洋風なエッセンスがお気に入りです。"
+
+[15]
+name_jp = "二枚貝の上のハルシネーション"
+filename = "th20_18.wav"
+position = "0x15764330, 0x0587e0, 0x1e1b940"
+frequency = 44100
+comment_en = "Nina Watari's theme.\n\nLike with Yuiman's theme, I didn't decide on the final image beforehand,\nbut made whatever came to mind. From chords to timber, I ignored theory\nand played freely, and it surprisingly came together cohesively (lol).\nThe world is full of wonders."
+name_en = "Hallucination Atop a Bivalve"
+comment_jp = "渡里ニナのテーマです\n\nユイマンの曲と同じく、出来上がりのイメージを決めないで\n思うがままに作りました。和音もコードも音色も何もかも\nセオリーを無視して自由に弾いた結果、意外と纏まりが\nいいです（笑）　世の中不思議だらけです。"
+
+[16]
+name_jp = "不変の日常"
+filename = "th20_15.wav"
+position = "0x1757fc70, 0x323760, 0x80c480"
+frequency = 44100
+comment_en = "The first ending theme.\n\nIt is mainly used in the bad endings. \nIt evokes an image of a dull, unchanging everyday life."
+name_en = "Unchanging Daily Life"
+comment_jp = "エンディングのテーマ１です\n\n主にバッドエンディングで使われてます。\n変化の薄い、けだるい日常をイメージしてます。"
+
+[17]
+name_jp = "愛おしき日常"
+filename = "th20_14.wav"
+position = "0x17d8c0f0, 0x078bc0, 0xc50c00"
+frequency = 44100
+comment_en = "The second ending theme.\n\nThis is the song for the good endings.\nIt has the same atmosphere as the usual songs.\nIt feels like everyday life has returned."
+name_en = "Beloved Daily Life"
+comment_jp = "エンディングのテーマ２です\n\nグッドエンディングの曲です。\nこれはいつもの曲の雰囲気ですね。\n日常が戻ってきた感じです"
+
+[18]
+name_jp = "生と死のある世界へ"
+filename = "th20_16.wav"
+position = "0x189dccf0, 0x020480, 0x996c90"
+frequency = 44100
+comment_en = "The Staff Roll theme.\n\nAn arrangement of Ariya's song.\nIt was melodious to begin with,\nso it's perfect for the ending."
+name_en = "To a World With Life and Death"
+comment_jp = "スタッフロールのテーマです\n\n阿梨夜の曲のアレンジです。\nもともとメロディアスなので\nエンディングにも向いてますね。"
+
+[19]
+name_jp = "プレイヤーズスコア"
+filename = "th128_08.wav"
+position = "0x19373980, 0x1cacc8, 0x66dcc0"
+frequency = 44100
+name_en = "Player's Score"

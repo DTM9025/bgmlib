@@ -7,6 +7,11 @@ Changelog
 NOTE: This file only lists changes to supported games and the back-end engine.
       Refer to the musicroom changelog for changes to the user interface program.
 
+- 2025/08/17 (Version 2.6.1)
+* Add bgm file for TH20
+
+----
+
 - 2024/07/06 (Version 2.6.0)
 * Refactor Track Decryption to include necessary info without resorting to hacks.
 * Refactor TH13.5-TH17.5 packmethods to use dedicated hashmaps.
